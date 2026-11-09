@@ -1,0 +1,53 @@
+{
+  "nama": "random_forest",
+  "disimpan_pada": "2026-11-03T19:19:59+00:00",
+  "versi_library": {
+    "python": "3.12.3",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.8.0"
+  },
+  "fitur": [
+    "dsri",
+    "gmi",
+    "aqi",
+    "sgi",
+    "depi",
+    "sgai",
+    "lvgi",
+    "tata",
+    "asset_growth",
+    "round_share_1000"
+  ],
+  "strategi_imbalance": "none",
+  "parameter": {
+    "min_samples_leaf": 10,
+    "max_features": "sqrt"
+  },
+  "seed": 42,
+  "metrik_uji": {
+    "roc_auc": 0.8824499330150115,
+    "pr_auc": 0.5493790334894845,
+    "recall_at_10": 0.5813953488372093,
+    "precision_at_10": 0.3472222222222222
+  },
+  "metrik_nested_cv": {
+    "strategi": "none",
+    "parameter_final": {
+      "min_samples_leaf": 10,
+      "max_features": "sqrt"
+    },
+    "pr_auc_mean": 0.6215828823899827,
+    "pr_auc_sd": 0.06604822854184447,
+    "roc_auc_mean": 0.8704920776187978,
+    "recall_at_10_mean": 0.6306349206349207,
+    "parameter_per_lipatan": [
+      "{\"max_features\": \"sqrt\", \"min_samples_leaf\": 10}",
+      "{\"max_features\": \"sqrt\", \"min_samples_leaf\": 10}",
+      "{\"max_features\": \"sqrt\", \"min_samples_leaf\": 10}",
+      "{\"max_features\": \"sqrt\", \"min_samples_leaf\": 10}",
+      "{\"max_features\": 0.5, \"min_samples_leaf\": 10}"
+    ]
+  }
+}

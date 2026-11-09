@@ -1,0 +1,51 @@
+{
+  "nama": "isolation_forest",
+  "disimpan_pada": "2026-11-03T19:20:04+00:00",
+  "versi_library": {
+    "python": "3.12.3",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.8.0"
+  },
+  "fitur": [
+    "dsri",
+    "gmi",
+    "aqi",
+    "sgi",
+    "depi",
+    "sgai",
+    "lvgi",
+    "tata",
+    "asset_growth",
+    "round_share_1000"
+  ],
+  "strategi_imbalance": "none",
+  "parameter": {
+    "max_samples": 0.5
+  },
+  "seed": 42,
+  "metrik_uji": {
+    "roc_auc": 0.7619456562811306,
+    "pr_auc": 0.3216845833473627,
+    "recall_at_10": 0.4418604651162791,
+    "precision_at_10": 0.2638888888888889
+  },
+  "metrik_nested_cv": {
+    "strategi": "none",
+    "parameter_final": {
+      "max_samples": 0.5
+    },
+    "pr_auc_mean": 0.4506094764300178,
+    "pr_auc_sd": 0.04962897566477585,
+    "roc_auc_mean": 0.7952643044050417,
+    "recall_at_10_mean": 0.5342857142857143,
+    "parameter_per_lipatan": [
+      "{\"max_samples\": 0.5}",
+      "{\"max_samples\": 0.5}",
+      "{\"max_samples\": 0.5}",
+      "{\"max_samples\": 0.5}",
+      "{\"max_samples\": 0.5}"
+    ]
+  }
+}

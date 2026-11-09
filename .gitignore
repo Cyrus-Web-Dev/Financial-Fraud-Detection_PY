@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+*.db
+node_modules/
+frontend/dist/
+.env
+reports/*.pdf
+data/uploads/
+data/history.db

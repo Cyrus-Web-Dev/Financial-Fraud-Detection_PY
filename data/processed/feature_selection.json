@@ -1,0 +1,564 @@
+{
+  "selected": [
+    "dsri",
+    "gmi",
+    "aqi",
+    "sgi",
+    "depi",
+    "sgai",
+    "lvgi",
+    "tata",
+    "asset_growth",
+    "round_share_1000"
+  ],
+  "report": [
+    {
+      "fitur": "dsri",
+      "label": "Indeks Piutang terhadap Penjualan (DSRI)",
+      "kelompok": "Beneish",
+      "status": "dipertahankan",
+      "alasan": "stabil pada Lasso (frekuensi 100%)",
+      "auc_univariat": 0.780455722162453,
+      "q_value": 1.5916691566863648e-34,
+      "vif_akhir": 1.7757840490055061,
+      "frekuensi_lasso": 1.0
+    },
+    {
+      "fitur": "gmi",
+      "label": "Indeks Margin Kotor (GMI)",
+      "kelompok": "Beneish",
+      "status": "dipertahankan",
+      "alasan": "stabil pada Lasso (frekuensi 71%)",
+      "auc_univariat": 0.6429847196073157,
+      "q_value": 1.1642490227392419e-09,
+      "vif_akhir": 1.1110519614468506,
+      "frekuensi_lasso": 0.71
+    },
+    {
+      "fitur": "aqi",
+      "label": "Indeks Kualitas Aset (AQI)",
+      "kelompok": "Beneish",
+      "status": "dipertahankan",
+      "alasan": "indeks Beneish (domain); frekuensi Lasso 0%",
+      "auc_univariat": 0.34525450511027433,
+      "q_value": 4.0282856235731155e-11,
+      "vif_akhir": 1.5323408377536119,
+      "frekuensi_lasso": 0.0
+    },
+    {
+      "fitur": "sgi",
+      "label": "Indeks Pertumbuhan Penjualan (SGI)",
+      "kelompok": "Beneish",
+      "status": "dipertahankan",
+      "alasan": "indeks Beneish (domain); frekuensi Lasso 1%",
+      "auc_univariat": 0.632787284830554,
+      "q_value": 1.5211871594615305e-08,
+      "vif_akhir": 2.629914946410948,
+      "frekuensi_lasso": 0.01
+    },
+    {
+      "fitur": "depi",
+      "label": "Indeks Penyusutan (DEPI)",
+      "kelompok": "Beneish",
+      "status": "dipertahankan",
+      "alasan": "indeks Beneish (domain); frekuensi Lasso 4%",
+      "auc_univariat": 0.5944287083109199,
+      "q_value": 9.434292084208478e-05,
+      "vif_akhir": 1.0666725703701405,
+      "frekuensi_lasso": 0.04
+    },
+    {
+      "fitur": "sgai",
+      "label": "Indeks Beban SGA (SGAI)",
+      "kelompok": "Beneish",
+      "status": "dipertahankan",
+      "alasan": "indeks Beneish (domain); frekuensi Lasso 6%",
+      "auc_univariat": 0.5425001681011297,
+      "q_value": 0.14032557091930542,
+      "vif_akhir": 1.1358090259917613,
+      "frekuensi_lasso": 0.06
+    },
+    {
+      "fitur": "lvgi",
+      "label": "Indeks Leverage (LVGI)",
+      "kelompok": "Beneish",
+      "status": "dipertahankan",
+      "alasan": "indeks Beneish (domain); frekuensi Lasso 3%",
+      "auc_univariat": 0.5100524475524476,
+      "q_value": 0.693005073553889,
+      "vif_akhir": 1.2882547698954365,
+      "frekuensi_lasso": 0.03
+    },
+    {
+      "fitur": "tata",
+      "label": "Akrual terhadap Total Aset (TATA)",
+      "kelompok": "Beneish",
+      "status": "dipertahankan",
+      "alasan": "stabil pada Lasso (frekuensi 99%)",
+      "auc_univariat": 0.7216644533351264,
+      "q_value": 6.8073365718668365e-22,
+      "vif_akhir": 5.234711970864362,
+      "frekuensi_lasso": 0.99
+    },
+    {
+      "fitur": "current_ratio",
+      "label": "Rasio Lancar",
+      "kelompok": "Likuiditas",
+      "status": "dibuang",
+      "alasan": "korelasi 0.99 dengan 'working_capital_to_assets'",
+      "auc_univariat": 0.5192875033620226,
+      "q_value": 0.5020932246224341,
+      "vif_akhir": null,
+      "frekuensi_lasso": null
+    },
+    {
+      "fitur": "quick_ratio",
+      "label": "Rasio Cepat",
+      "kelompok": "Likuiditas",
+      "status": "dibuang",
+      "alasan": "korelasi 0.94 dengan 'working_capital_to_assets'",
+      "auc_univariat": 0.5184659090909091,
+      "q_value": 0.5102311056384445,
+      "vif_akhir": null,
+      "frekuensi_lasso": null
+    },
+    {
+      "fitur": "cash_ratio",
+      "label": "Rasio Kas",
+      "kelompok": "Likuiditas",
+      "status": "dibuang",
+      "alasan": "tidak stabil pada Lasso (frekuensi 0%)",
+      "auc_univariat": 0.48603920118343197,
+      "q_value": 0.6010380480209538,
+      "vif_akhir": 1.4714164659226587,
+      "frekuensi_lasso": 0.0
+    },
+    {
+      "fitur": "debt_to_assets",
+      "label": "Liabilitas terhadap Aset",
+      "kelompok": "Solvabilitas",
+      "status": "dibuang",
+      "alasan": "korelasi 1.00 dengan 'debt_to_equity'",
+      "auc_univariat": 0.5243998789671867,
+      "q_value": 0.36979754778763807,
+      "vif_akhir": null,
+      "frekuensi_lasso": null
+    },
+    {
+      "fitur": "debt_to_equity",
+      "label": "Liabilitas terhadap Ekuitas (DER)",
+      "kelompok": "Solvabilitas",
+      "status": "dibuang",
+      "alasan": "tidak stabil pada Lasso (frekuensi 0%)",
+      "auc_univariat": 0.5250176506186122,
+      "q_value": 0.36979754778763807,
+      "vif_akhir": 2.8051234155170315,
+      "frekuensi_lasso": 0.0
+    },
+    {
+      "fitur": "long_term_debt_to_assets",
+      "label": "Utang Jangka Panjang terhadap Aset",
+      "kelompok": "Solvabilitas",
+      "status": "dibuang",
+      "alasan": "tidak stabil pada Lasso (frekuensi 0%)",
+      "auc_univariat": 0.5168836572081764,
+      "q_value": 0.542710190972771,
+      "vif_akhir": 2.541707152436387,
+      "frekuensi_lasso": 0.0
+    },
+    {
+      "fitur": "interest_coverage",
+      "label": "Cakupan Bunga",
+      "kelompok": "Solvabilitas",
+      "status": "dibuang",
+      "alasan": "tidak stabil pada Lasso (frekuensi 0%)",
+      "auc_univariat": 0.4742090841850457,
+      "q_value": 0.36979754778763807,
+      "vif_akhir": 3.935121750867758,
+      "frekuensi_lasso": 0.0
+    },
+    {
+      "fitur": "roa",
+      "label": "Return on Assets (ROA)",
+      "kelompok": "Profitabilitas",
+      "status": "dibuang",
+      "alasan": "korelasi 1.00 dengan 'ebit_to_assets'",
+      "auc_univariat": 0.4754425262237762,
+      "q_value": 0.36979754778763807,
+      "vif_akhir": null,
+      "frekuensi_lasso": null
+    },
+    {
+      "fitur": "roe",
+      "label": "Return on Equity (ROE)",
+      "kelompok": "Profitabilitas",
+      "status": "dibuang",
+      "alasan": "korelasi 0.94 dengan 'ebit_to_assets'",
+      "auc_univariat": 0.4846292529585799,
+      "q_value": 0.573431076902012,
+      "vif_akhir": null,
+      "frekuensi_lasso": null
+    },
+    {
+      "fitur": "net_margin",
+      "label": "Margin Laba Bersih",
+      "kelompok": "Profitabilitas",
+      "status": "dibuang",
+      "alasan": "korelasi 0.99 dengan 'operating_margin'",
+      "auc_univariat": 0.4670143558364712,
+      "q_value": 0.25551629299389017,
+      "vif_akhir": null,
+      "frekuensi_lasso": null
+    },
+    {
+      "fitur": "gross_margin",
+      "label": "Margin Kotor",
+      "kelompok": "Profitabilitas",
+      "status": "dibuang",
+      "alasan": "tidak stabil pada Lasso (frekuensi 0%)",
+      "auc_univariat": 0.44438584252286173,
+      "q_value": 0.03678968221042707,
+      "vif_akhir": 4.9282521749279224,
+      "frekuensi_lasso": 0.0
+    },
+    {
+      "fitur": "operating_margin",
+      "label": "Margin Operasi",
+      "kelompok": "Profitabilitas",
+      "status": "dibuang",
+      "alasan": "korelasi 0.94 dengan 'gross_margin'",
+      "auc_univariat": 0.46297992872512106,
+      "q_value": 0.21031667396946427,
+      "vif_akhir": null,
+      "frekuensi_lasso": null
+    },
+    {
+      "fitur": "ebit_to_assets",
+      "label": "EBIT terhadap Aset",
+      "kelompok": "Profitabilitas",
+      "status": "dibuang",
+      "alasan": "korelasi 0.93 dengan 'cfo_to_assets'",
+      "auc_univariat": 0.4747827292899408,
+      "q_value": 0.36979754778763807,
+      "vif_akhir": null,
+      "frekuensi_lasso": null
+    },
+    {
+      "fitur": "asset_turnover",
+      "label": "Perputaran Aset",
+      "kelompok": "Aktivitas",
+      "status": "dibuang",
+      "alasan": "VIF 19.6 > 10",
+      "auc_univariat": 0.5091867267348037,
+      "q_value": 0.7020642991815018,
+      "vif_akhir": null,
+      "frekuensi_lasso": null
+    },
+    {
+      "fitur": "dso",
+      "label": "Hari Penagihan Piutang (DSO)",
+      "kelompok": "Aktivitas",
+      "status": "dibuang",
+      "alasan": "tidak stabil pada Lasso (frekuensi 0%)",
+      "auc_univariat": 0.5668244015599785,
+      "q_value": 0.009584350034923276,
+      "vif_akhir": 3.5970984259480723,
+      "frekuensi_lasso": 0.0
+    },
+    {
+      "fitur": "dio",
+      "label": "Hari Persediaan (DIO)",
+      "kelompok": "Aktivitas",
+      "status": "dibuang",
+      "alasan": "tidak stabil pada Lasso (frekuensi 0%)",
+      "auc_univariat": 0.5077851835664335,
+      "q_value": 0.7289153512948823,
+      "vif_akhir": 6.435274511191632,
+      "frekuensi_lasso": 0.0
+    },
+    {
+      "fitur": "receivables_to_assets",
+      "label": "Piutang terhadap Aset",
+      "kelompok": "Struktur Aset",
+      "status": "dibuang",
+      "alasan": "tidak stabil pada Lasso (frekuensi 0%)",
+      "auc_univariat": 0.5541852978752018,
+      "q_value": 0.040749939419797876,
+      "vif_akhir": 5.4681822873960115,
+      "frekuensi_lasso": 0.0
+    },
+    {
+      "fitur": "inventory_to_assets",
+      "label": "Persediaan terhadap Aset",
+      "kelompok": "Struktur Aset",
+      "status": "dibuang",
+      "alasan": "tidak stabil pada Lasso (frekuensi 0%)",
+      "auc_univariat": 0.533300833781603,
+      "q_value": 0.25551629299389017,
+      "vif_akhir": 3.7784412368108025,
+      "frekuensi_lasso": 0.0
+    },
+    {
+      "fitur": "ppe_to_assets",
+      "label": "Aset Tetap terhadap Aset",
+      "kelompok": "Struktur Aset",
+      "status": "dibuang",
+      "alasan": "tidak stabil pada Lasso (frekuensi 0%)",
+      "auc_univariat": 0.4705171631253362,
+      "q_value": 0.32454386158435117,
+      "vif_akhir": 1.4822784152383892,
+      "frekuensi_lasso": 0.0
+    },
+    {
+      "fitur": "retained_earnings_to_assets",
+      "label": "Laba Ditahan terhadap Aset",
+      "kelompok": "Struktur Aset",
+      "status": "dibuang",
+      "alasan": "tidak stabil pada Lasso (frekuensi 0%)",
+      "auc_univariat": 0.46004656401291016,
+      "q_value": 0.16937125299953518,
+      "vif_akhir": 3.90593152772923,
+      "frekuensi_lasso": 0.0
+    },
+    {
+      "fitur": "working_capital_to_assets",
+      "label": "Modal Kerja terhadap Aset",
+      "kelompok": "Struktur Aset",
+      "status": "dibuang",
+      "alasan": "VIF 14.2 > 10",
+      "auc_univariat": 0.5266398265196343,
+      "q_value": 0.36979754778763807,
+      "vif_akhir": null,
+      "frekuensi_lasso": null
+    },
+    {
+      "fitur": "asset_growth",
+      "label": "Pertumbuhan Aset",
+      "kelompok": "Pertumbuhan",
+      "status": "dipertahankan",
+      "alasan": "stabil pada Lasso (frekuensi 85%)",
+      "auc_univariat": 0.7046211000537924,
+      "q_value": 7.401597298711287e-19,
+      "vif_akhir": 1.9153172694714338,
+      "frekuensi_lasso": 0.85
+    },
+    {
+      "fitur": "cfo_to_assets",
+      "label": "Arus Kas Operasi terhadap Aset",
+      "kelompok": "Kualitas Laba",
+      "status": "dibuang",
+      "alasan": "tidak stabil pada Lasso (frekuensi 0%)",
+      "auc_univariat": 0.3878471288327058,
+      "q_value": 2.3745635035532493e-06,
+      "vif_akhir": 8.750583148095215,
+      "frekuensi_lasso": 0.0
+    },
+    {
+      "fitur": "cfo_to_revenue",
+      "label": "Arus Kas Operasi terhadap Pendapatan",
+      "kelompok": "Kualitas Laba",
+      "status": "dibuang",
+      "alasan": "VIF 12.2 > 10",
+      "auc_univariat": 0.36193433969876276,
+      "q_value": 4.061535981045747e-09,
+      "vif_akhir": null,
+      "frekuensi_lasso": null
+    },
+    {
+      "fitur": "mve_to_liabilities",
+      "label": "Nilai Pasar Ekuitas terhadap Liabilitas",
+      "kelompok": "Pasar",
+      "status": "dibuang",
+      "alasan": "tidak stabil pada Lasso (frekuensi 0%)",
+      "auc_univariat": 0.5347065794782141,
+      "q_value": 0.24460769350860467,
+      "vif_akhir": 4.465038939185382,
+      "frekuensi_lasso": 0.0
+    },
+    {
+      "fitur": "market_to_book",
+      "label": "Market-to-Book",
+      "kelompok": "Pasar",
+      "status": "dibuang",
+      "alasan": "tidak stabil pada Lasso (frekuensi 27%)",
+      "auc_univariat": 0.5639057456966111,
+      "q_value": 0.01331531522145935,
+      "vif_akhir": 2.851734981018676,
+      "frekuensi_lasso": 0.27
+    },
+    {
+      "fitur": "log_total_assets",
+      "label": "Ukuran Perusahaan (ln Aset)",
+      "kelompok": "Ukuran",
+      "status": "dibuang",
+      "alasan": "tidak stabil pada Lasso (frekuensi 0%)",
+      "auc_univariat": 0.4867935550026896,
+      "q_value": 0.6071725689876765,
+      "vif_akhir": 1.024167049102058,
+      "frekuensi_lasso": 0.0
+    },
+    {
+      "fitur": "round_share_1000",
+      "label": "Porsi Angka Bulat Ribuan",
+      "kelompok": "Digit",
+      "status": "dipertahankan",
+      "alasan": "stabil pada Lasso (frekuensi 100%)",
+      "auc_univariat": 0.7072046042899408,
+      "q_value": 1.1836425454287083e-145,
+      "vif_akhir": 1.0564460868374623,
+      "frekuensi_lasso": 1.0
+    }
+  ],
+  "steps": {
+    "pembuangan_preprocessing": {},
+    "pembuangan_korelasi": [
+      {
+        "fitur": "debt_to_assets",
+        "berkorelasi_dengan": "debt_to_equity",
+        "rho": 0.9984654261698134
+      },
+      {
+        "fitur": "roa",
+        "berkorelasi_dengan": "ebit_to_assets",
+        "rho": 0.9971306652992082
+      },
+      {
+        "fitur": "current_ratio",
+        "berkorelasi_dengan": "working_capital_to_assets",
+        "rho": 0.9925133347034039
+      },
+      {
+        "fitur": "net_margin",
+        "berkorelasi_dengan": "operating_margin",
+        "rho": 0.9892305347777854
+      },
+      {
+        "fitur": "roe",
+        "berkorelasi_dengan": "ebit_to_assets",
+        "rho": 0.9427768927919145
+      },
+      {
+        "fitur": "operating_margin",
+        "berkorelasi_dengan": "gross_margin",
+        "rho": 0.9360689727891625
+      },
+      {
+        "fitur": "quick_ratio",
+        "berkorelasi_dengan": "working_capital_to_assets",
+        "rho": 0.9352840408997717
+      },
+      {
+        "fitur": "ebit_to_assets",
+        "berkorelasi_dengan": "cfo_to_assets",
+        "rho": 0.9331518617747143
+      }
+    ],
+    "pembuangan_vif": [
+      {
+        "langkah": 1,
+        "fitur": "asset_turnover",
+        "vif": 19.564780621855558
+      },
+      {
+        "langkah": 2,
+        "fitur": "working_capital_to_assets",
+        "vif": 14.185215824736208
+      },
+      {
+        "langkah": 3,
+        "fitur": "cfo_to_revenue",
+        "vif": 12.206400017672507
+      }
+    ],
+    "vif_akhir": {
+      "cfo_to_assets": 8.750583148095215,
+      "dio": 6.435274511191632,
+      "receivables_to_assets": 5.4681822873960115,
+      "tata": 5.234711970864362,
+      "gross_margin": 4.9282521749279224,
+      "mve_to_liabilities": 4.465038939185382,
+      "interest_coverage": 3.935121750867758,
+      "retained_earnings_to_assets": 3.90593152772923,
+      "inventory_to_assets": 3.7784412368108025,
+      "dso": 3.5970984259480723,
+      "market_to_book": 2.851734981018676,
+      "debt_to_equity": 2.8051234155170315,
+      "sgi": 2.629914946410948,
+      "long_term_debt_to_assets": 2.541707152436387,
+      "asset_growth": 1.9153172694714338,
+      "dsri": 1.7757840490055061,
+      "aqi": 1.5323408377536119,
+      "ppe_to_assets": 1.4822784152383892,
+      "cash_ratio": 1.4714164659226587,
+      "lvgi": 1.2882547698954365,
+      "sgai": 1.1358090259917613,
+      "gmi": 1.1110519614468506,
+      "depi": 1.0666725703701405,
+      "round_share_1000": 1.0564460868374623,
+      "log_total_assets": 1.024167049102058
+    },
+    "pemilihan_C_lasso": {
+      "C_terpilih": 0.01,
+      "tabel_cv": [
+        {
+          "C": 0.001,
+          "pr_auc_mean": 0.45193611111111115,
+          "pr_auc_sd": 0.05157054198530613
+        },
+        {
+          "C": 0.0021544346900318843,
+          "pr_auc_mean": 0.48585014667293686,
+          "pr_auc_sd": 0.07557748136113136
+        },
+        {
+          "C": 0.004641588833612777,
+          "pr_auc_mean": 0.5871453633321504,
+          "pr_auc_sd": 0.06673933398083848
+        },
+        {
+          "C": 0.01,
+          "pr_auc_mean": 0.6112901196869285,
+          "pr_auc_sd": 0.07957164074012968
+        },
+        {
+          "C": 0.021544346900318832,
+          "pr_auc_mean": 0.6264282300994796,
+          "pr_auc_sd": 0.080831168742637
+        },
+        {
+          "C": 0.046415888336127774,
+          "pr_auc_mean": 0.6230450932990241,
+          "pr_auc_sd": 0.07452134364122971
+        },
+        {
+          "C": 0.1,
+          "pr_auc_mean": 0.6144059587131492,
+          "pr_auc_sd": 0.06836400692194403
+        },
+        {
+          "C": 0.21544346900318823,
+          "pr_auc_mean": 0.6110433506610884,
+          "pr_auc_sd": 0.06265518464642761
+        },
+        {
+          "C": 0.46415888336127775,
+          "pr_auc_mean": 0.6061743543019245,
+          "pr_auc_sd": 0.060896148673310946
+        },
+        {
+          "C": 1.0,
+          "pr_auc_mean": 0.6046431054270316,
+          "pr_auc_sd": 0.05980745237705448
+        }
+      ]
+    },
+    "fitur_terlindungi_vif_tinggi": [],
+    "parameter": {
+      "corr_threshold": 0.9,
+      "vif_threshold": 10.0,
+      "stability_threshold": 0.6,
+      "n_boot": 100,
+      "seed": 42
+    }
+  }
+}

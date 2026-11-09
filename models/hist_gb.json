@@ -1,0 +1,55 @@
+{
+  "nama": "hist_gb",
+  "disimpan_pada": "2026-11-03T19:20:01+00:00",
+  "versi_library": {
+    "python": "3.12.3",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.8.0"
+  },
+  "fitur": [
+    "dsri",
+    "gmi",
+    "aqi",
+    "sgi",
+    "depi",
+    "sgai",
+    "lvgi",
+    "tata",
+    "asset_growth",
+    "round_share_1000"
+  ],
+  "strategi_imbalance": "none",
+  "parameter": {
+    "learning_rate": 0.05,
+    "max_leaf_nodes": 8,
+    "l2_regularization": 1.0
+  },
+  "seed": 42,
+  "metrik_uji": {
+    "roc_auc": 0.870598742743293,
+    "pr_auc": 0.5431605336695263,
+    "recall_at_10": 0.5581395348837209,
+    "precision_at_10": 0.3333333333333333
+  },
+  "metrik_nested_cv": {
+    "strategi": "none",
+    "parameter_final": {
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 8,
+      "l2_regularization": 1.0
+    },
+    "pr_auc_mean": 0.6043215793299741,
+    "pr_auc_sd": 0.0736592543877149,
+    "roc_auc_mean": 0.8646355411245532,
+    "recall_at_10_mean": 0.6022222222222222,
+    "parameter_per_lipatan": [
+      "{\"l2_regularization\": 1.0, \"learning_rate\": 0.05, \"max_leaf_nodes\": 8}",
+      "{\"l2_regularization\": 1.0, \"learning_rate\": 0.05, \"max_leaf_nodes\": 8}",
+      "{\"l2_regularization\": 0.0, \"learning_rate\": 0.05, \"max_leaf_nodes\": 8}",
+      "{\"l2_regularization\": 1.0, \"learning_rate\": 0.05, \"max_leaf_nodes\": 8}",
+      "{\"l2_regularization\": 1.0, \"learning_rate\": 0.05, \"max_leaf_nodes\": 8}"
+    ]
+  }
+}

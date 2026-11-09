@@ -1,0 +1,2668 @@
+{
+  "validasi": {
+    "is_valid": true,
+    "n_errors": 0,
+    "n_warnings": 1,
+    "issues": [
+      {
+        "severity": "warning",
+        "code": "OUTLIER",
+        "message": "Kolom 'market_value_equity' memiliki 1 sel yang sangat menyimpang (modified z-score > 8).",
+        "column": "market_value_equity",
+        "count": 1,
+        "share": 0.0002777777777777778
+      },
+      {
+        "severity": "info",
+        "code": "IMBALANCE",
+        "message": "Proporsi fraud 6.08% (219 dari 3600). Perlu penanganan ketidakseimbangan kelas dan metrik yang sesuai.",
+        "column": null,
+        "count": 219,
+        "share": null
+      }
+    ],
+    "summary": {
+      "n_baris": 3600,
+      "n_kolom": 34,
+      "n_perusahaan": 600,
+      "rentang_tahun": [
+        2018,
+        2023
+      ],
+      "baris_dengan_missing": 0,
+      "persen_baris_dengan_missing": 0.0,
+      "jumlah_sel_outlier": 1,
+      "baris_dengan_outlier": 1,
+      "jumlah_fraud": 219,
+      "jumlah_non_fraud": 3381,
+      "proporsi_fraud": 0.060833333333333336
+    }
+  },
+  "deskriptif": [
+    {
+      "kolom": "total_assets",
+      "n": 3600,
+      "missing": 0,
+      "persen_missing": 0.0,
+      "mean": 4635536.458333333,
+      "sd": 8656616.332314968,
+      "min": 47269.0,
+      "q1": 726806.5,
+      "median": 1851167.0,
+      "q3": 4491073.25,
+      "max": 101535643.0,
+      "skewness": 4.96346385334599,
+      "kurtosis": 34.01026466456088
+    },
+    {
+      "kolom": "current_assets",
+      "n": 3600,
+      "missing": 0,
+      "persen_missing": 0.0,
+      "mean": 1516625.7280555556,
+      "sd": 2987336.8753207545,
+      "min": 11485.0,
+      "q1": 217609.5,
+      "median": 581303.5,
+      "q3": 1519031.0,
+      "max": 44183009.0,
+      "skewness": 5.89291024988804,
+      "kurtosis": 52.96152827346763
+    },
+    {
+      "kolom": "cash",
+      "n": 3600,
+      "missing": 0,
+      "persen_missing": 0.0,
+      "mean": 324640.24805555557,
+      "sd": 701487.5116813715,
+      "min": 1520.0,
+      "q1": 42878.75,
+      "median": 114751.0,
+      "q3": 318955.25,
+      "max": 10726082.0,
+      "skewness": 6.847435815964366,
+      "kurtosis": 66.82023916978117
+    },
+    {
+      "kolom": "receivables",
+      "n": 3600,
+      "missing": 0,
+      "persen_missing": 0.0,
+      "mean": 630766.6333333333,
+      "sd": 1314208.4708425433,
+      "min": 3596.0,
+      "q1": 80653.75,
+      "median": 237067.0,
+      "q3": 596186.0,
+      "max": 19604174.0,
+      "skewness": 6.124685941189952,
+      "kurtosis": 55.814639455779194
+    },
+    {
+      "kolom": "inventory",
+      "n": 3600,
+      "missing": 0,
+      "persen_missing": 0.0,
+      "mean": 449878.99,
+      "sd": 955006.6447587869,
+      "min": 3632.0,
+      "q1": 57465.0,
+      "median": 156090.0,
+      "q3": 437654.75,
+      "max": 12818431.0,
+      "skewness": 6.307089082759295,
+      "kurtosis": 56.821998793876915
+    },
+    {
+      "kolom": "ppe_net",
+      "n": 3600,
+      "missing": 0,
+      "persen_missing": 0.0,
+      "mean": 1239297.9827777778,
+      "sd": 2460925.298362069,
+      "min": 4728.0,
+      "q1": 165946.0,
+      "median": 446085.0,
+      "q3": 1147241.75,
+      "max": 32052405.0,
+      "skewness": 5.204997204922993,
+      "kurtosis": 37.933071724940014
+    },
+    {
+      "kolom": "current_liabilities",
+      "n": 3600,
+      "missing": 0,
+      "persen_missing": 0.0,
+      "mean": 1407660.7586111112,
+      "sd": 2576152.3790633553,
+      "min": 11683.0,
+      "q1": 204770.5,
+      "median": 548300.5,
+      "q3": 1361745.5,
+      "max": 29161567.0,
+      "skewness": 4.274050768054716,
+      "kurtosis": 23.647861508724986
+    },
+    {
+      "kolom": "long_term_debt",
+      "n": 3600,
+      "missing": 0,
+      "persen_missing": 0.0,
+      "mean": 822904.9066666666,
+      "sd": 1830146.1300336118,
+      "min": 4098.0,
+      "q1": 102148.25,
+      "median": 262807.5,
+      "q3": 739901.5,
+      "max": 25595397.0,
+      "skewness": 5.920376369547303,
+      "kurtosis": 47.520108350561394
+    },
+    {
+      "kolom": "total_liabilities",
+      "n": 3600,
+      "missing": 0,
+      "persen_missing": 0.0,
+      "mean": 2230565.6652777777,
+      "sd": 4248380.849757374,
+      "min": 17454.0,
+      "q1": 333014.0,
+      "median": 816760.5,
+      "q3": 2035540.75,
+      "max": 54756964.0,
+      "skewness": 4.707928898568769,
+      "kurtosis": 29.933988686903362
+    },
+    {
+      "kolom": "equity",
+      "n": 3600,
+      "missing": 0,
+      "persen_missing": 0.0,
+      "mean": 2404970.793055556,
+      "sd": 4760886.191128911,
+      "min": -37842.0,
+      "q1": 328387.5,
+      "median": 965801.5,
+      "q3": 2340856.5,
+      "max": 67273603.0,
+      "skewness": 5.829491768758614,
+      "kurtosis": 50.41362176370017
+    },
+    {
+      "kolom": "retained_earnings",
+      "n": 3600,
+      "missing": 0,
+      "persen_missing": 0.0,
+      "mean": 1928622.2475,
+      "sd": 3659905.5436503794,
+      "min": 4126.0,
+      "q1": 256251.25,
+      "median": 750675.0,
+      "q3": 1939668.25,
+      "max": 39255845.0,
+      "skewness": 4.669384449136252,
+      "kurtosis": 27.797629169624038
+    },
+    {
+      "kolom": "revenue",
+      "n": 3600,
+      "missing": 0,
+      "persen_missing": 0.0,
+      "mean": 3598128.8097222224,
+      "sd": 7202105.802937296,
+      "min": 13008.0,
+      "q1": 455713.0,
+      "median": 1381761.5,
+      "q3": 3558718.0,
+      "max": 92964000.0,
+      "skewness": 5.67484751562851,
+      "kurtosis": 46.230201754129745
+    },
+    {
+      "kolom": "cogs",
+      "n": 3600,
+      "missing": 0,
+      "persen_missing": 0.0,
+      "mean": 2424937.7080555554,
+      "sd": 5170239.52067218,
+      "min": 9613.0,
+      "q1": 295812.75,
+      "median": 900007.5,
+      "q3": 2372429.75,
+      "max": 75430352.0,
+      "skewness": 6.676651716249162,
+      "kurtosis": 64.10797277398034
+    },
+    {
+      "kolom": "sga",
+      "n": 3600,
+      "missing": 0,
+      "persen_missing": 0.0,
+      "mean": 331233.4347222222,
+      "sd": 596544.184611802,
+      "min": 1452.0,
+      "q1": 41854.0,
+      "median": 124992.5,
+      "q3": 328522.25,
+      "max": 5835274.0,
+      "skewness": 3.9883087083104973,
+      "kurtosis": 20.218586669501175
+    },
+    {
+      "kolom": "depreciation",
+      "n": 3600,
+      "missing": 0,
+      "persen_missing": 0.0,
+      "mean": 88036.65472222223,
+      "sd": 185871.76589463995,
+      "min": 251.0,
+      "q1": 10998.0,
+      "median": 31147.0,
+      "q3": 80305.0,
+      "max": 2469645.0,
+      "skewness": 5.610054097176904,
+      "kurtosis": 42.87174431325253
+    },
+    {
+      "kolom": "ebit",
+      "n": 3600,
+      "missing": 0,
+      "persen_missing": 0.0,
+      "mean": 753920.9211111111,
+      "sd": 1699179.4196593615,
+      "min": -254549.0,
+      "q1": 75230.5,
+      "median": 242980.0,
+      "q3": 746437.25,
+      "max": 26626451.0,
+      "skewness": 6.363580033671446,
+      "kurtosis": 57.434447415194654
+    },
+    {
+      "kolom": "interest_expense",
+      "n": 3600,
+      "missing": 0,
+      "persen_missing": 0.0,
+      "mean": 69484.6588888889,
+      "sd": 156967.57649741854,
+      "min": 272.0,
+      "q1": 8409.25,
+      "median": 21893.0,
+      "q3": 61987.25,
+      "max": 2487835.0,
+      "skewness": 6.266153899547045,
+      "kurtosis": 56.238643283409495
+    },
+    {
+      "kolom": "net_income",
+      "n": 3600,
+      "missing": 0,
+      "persen_missing": 0.0,
+      "mean": 533448.9177777778,
+      "sd": 1257322.5107686592,
+      "min": -530749.0,
+      "q1": 45461.5,
+      "median": 163840.5,
+      "q3": 522353.75,
+      "max": 20524397.0,
+      "skewness": 6.707523664100813,
+      "kurtosis": 64.26701471191573
+    },
+    {
+      "kolom": "operating_cash_flow",
+      "n": 3600,
+      "missing": 0,
+      "persen_missing": 0.0,
+      "mean": 536713.0902777778,
+      "sd": 1237702.2927979648,
+      "min": -1481360.0,
+      "q1": 46522.5,
+      "median": 166079.0,
+      "q3": 537072.0,
+      "max": 18717597.0,
+      "skewness": 6.333424150793626,
+      "kurtosis": 57.277436761373245
+    },
+    {
+      "kolom": "market_value_equity",
+      "n": 3600,
+      "missing": 0,
+      "persen_missing": 0.0,
+      "mean": 3260816.0919444445,
+      "sd": 6739732.713007458,
+      "min": 2615.0,
+      "q1": 379708.75,
+      "median": 1117106.0,
+      "q3": 3016442.0,
+      "max": 105567415.0,
+      "skewness": 5.464453639693165,
+      "kurtosis": 43.49824218724277
+    }
+  ],
+  "normalitas": [
+    {
+      "kolom": "total_assets",
+      "n": 3600,
+      "shapiro_W": 0.49416886501337476,
+      "shapiro_p": 1.1670560678455724e-72,
+      "dagostino_p": 0.0,
+      "normal": "tidak"
+    },
+    {
+      "kolom": "current_assets",
+      "n": 3600,
+      "shapiro_W": 0.4650478468404493,
+      "shapiro_p": 8.386251683178439e-74,
+      "dagostino_p": 0.0,
+      "normal": "tidak"
+    },
+    {
+      "kolom": "cash",
+      "n": 3600,
+      "shapiro_W": 0.4154522079463834,
+      "shapiro_p": 1.2403847490041062e-75,
+      "dagostino_p": 0.0,
+      "normal": "tidak"
+    },
+    {
+      "kolom": "receivables",
+      "n": 3600,
+      "shapiro_W": 0.4427888914728515,
+      "shapiro_p": 1.2161002578406516e-74,
+      "dagostino_p": 0.0,
+      "normal": "tidak"
+    },
+    {
+      "kolom": "inventory",
+      "n": 3600,
+      "shapiro_W": 0.43095468456427044,
+      "shapiro_p": 4.474711282231747e-75,
+      "dagostino_p": 0.0,
+      "normal": "tidak"
+    },
+    {
+      "kolom": "ppe_net",
+      "n": 3600,
+      "shapiro_W": 0.4710247814415748,
+      "shapiro_p": 1.425084504953452e-73,
+      "dagostino_p": 0.0,
+      "normal": "tidak"
+    },
+    {
+      "kolom": "current_liabilities",
+      "n": 3600,
+      "shapiro_W": 0.5183613626896828,
+      "shapiro_p": 1.1502778499754256e-71,
+      "dagostino_p": 0.0,
+      "normal": "tidak"
+    },
+    {
+      "kolom": "long_term_debt",
+      "n": 3600,
+      "shapiro_W": 0.4218921188914856,
+      "shapiro_p": 2.106042680388428e-75,
+      "dagostino_p": 0.0,
+      "normal": "tidak"
+    },
+    {
+      "kolom": "total_liabilities",
+      "n": 3600,
+      "shapiro_W": 0.49499244079707894,
+      "shapiro_p": 1.259633619612725e-72,
+      "dagostino_p": 0.0,
+      "normal": "tidak"
+    },
+    {
+      "kolom": "equity",
+      "n": 3600,
+      "shapiro_W": 0.4618157273277249,
+      "shapiro_p": 6.309023553131023e-74,
+      "dagostino_p": 0.0,
+      "normal": "tidak"
+    },
+    {
+      "kolom": "retained_earnings",
+      "n": 3600,
+      "shapiro_W": 0.4931500329929963,
+      "shapiro_p": 1.062045685815105e-72,
+      "dagostino_p": 0.0,
+      "normal": "tidak"
+    },
+    {
+      "kolom": "revenue",
+      "n": 3600,
+      "shapiro_W": 0.4621219629157006,
+      "shapiro_p": 6.481061598988705e-74,
+      "dagostino_p": 0.0,
+      "normal": "tidak"
+    },
+    {
+      "kolom": "cogs",
+      "n": 3600,
+      "shapiro_W": 0.42487334783572095,
+      "shapiro_p": 2.695540100433877e-75,
+      "dagostino_p": 0.0,
+      "normal": "tidak"
+    },
+    {
+      "kolom": "sga",
+      "n": 3600,
+      "shapiro_W": 0.5373727947316543,
+      "shapiro_p": 7.449542294686425e-71,
+      "dagostino_p": 0.0,
+      "normal": "tidak"
+    },
+    {
+      "kolom": "depreciation",
+      "n": 3600,
+      "shapiro_W": 0.44200962807180344,
+      "shapiro_p": 1.1379819438139813e-74,
+      "dagostino_p": 0.0,
+      "normal": "tidak"
+    },
+    {
+      "kolom": "ebit",
+      "n": 3600,
+      "shapiro_W": 0.41435071517077926,
+      "shapiro_p": 1.1335751447729553e-75,
+      "dagostino_p": 0.0,
+      "normal": "tidak"
+    },
+    {
+      "kolom": "interest_expense",
+      "n": 3600,
+      "shapiro_W": 0.414472742293273,
+      "shapiro_p": 1.1449315075280773e-75,
+      "dagostino_p": 0.0,
+      "normal": "tidak"
+    },
+    {
+      "kolom": "net_income",
+      "n": 3600,
+      "shapiro_W": 0.40403395739417547,
+      "shapiro_p": 4.911492789158247e-76,
+      "dagostino_p": 0.0,
+      "normal": "tidak"
+    },
+    {
+      "kolom": "operating_cash_flow",
+      "n": 3600,
+      "shapiro_W": 0.4264230851380537,
+      "shapiro_p": 3.065838896592991e-75,
+      "dagostino_p": 0.0,
+      "normal": "tidak"
+    },
+    {
+      "kolom": "market_value_equity",
+      "n": 3600,
+      "shapiro_W": 0.45931354786346135,
+      "shapiro_p": 5.066499428322191e-74,
+      "dagostino_p": 0.0,
+      "normal": "tidak"
+    }
+  ],
+  "korelasi": {
+    "kolom": [
+      "total_assets",
+      "current_assets",
+      "cash",
+      "receivables",
+      "inventory",
+      "ppe_net",
+      "current_liabilities",
+      "long_term_debt",
+      "total_liabilities",
+      "equity",
+      "retained_earnings",
+      "revenue",
+      "cogs",
+      "sga",
+      "depreciation",
+      "ebit",
+      "interest_expense",
+      "net_income",
+      "operating_cash_flow",
+      "market_value_equity"
+    ],
+    "matriks": [
+      [
+        1.0,
+        0.9848606061463033,
+        0.9437152438738806,
+        0.9573997284351898,
+        0.9443635878030499,
+        0.9511338333408095,
+        0.9636802039163636,
+        0.9237969272483072,
+        0.9720562115087206,
+        0.9675706816541164,
+        0.9519990852756494,
+        0.9461855171953846,
+        0.9425307670345925,
+        0.9308151791836229,
+        0.9358466209350451,
+        0.8360566692896421,
+        0.918656553149363,
+        0.7681088086628497,
+        0.7585144807326137,
+        0.9099650077718605
+      ],
+      [
+        0.9848606061463033,
+        1.0,
+        0.9509228113633063,
+        0.978260635462777,
+        0.9638848442698026,
+        0.9286336243434554,
+        0.9489502821781147,
+        0.9072406938789019,
+        0.9567287170019826,
+        0.9529890386089129,
+        0.9470979999451702,
+        0.9601715147303455,
+        0.9562456495805046,
+        0.9407845548893213,
+        0.9141552695513784,
+        0.8557408530837136,
+        0.9015847899407563,
+        0.7932276384596305,
+        0.7664297361289769,
+        0.897745938457183
+      ],
+      [
+        0.9437152438738806,
+        0.9509228113633063,
+        1.0,
+        0.9021806944289009,
+        0.8915030169098958,
+        0.8977591702334535,
+        0.9124700372661757,
+        0.8722061137040056,
+        0.9198595157889128,
+        0.9104580972470211,
+        0.8933314656111364,
+        0.8920454102399101,
+        0.8887604837862646,
+        0.8756291041522027,
+        0.8813609904360022,
+        0.7864556560602374,
+        0.8684768426463597,
+        0.7214316563016847,
+        0.7127143240693097,
+        0.8580648520891674
+      ],
+      [
+        0.9573997284351898,
+        0.978260635462777,
+        0.9021806944289009,
+        1.0,
+        0.91259176192447,
+        0.8989827466993381,
+        0.9244802710710293,
+        0.8817783949902176,
+        0.9306282836374482,
+        0.926923694307483,
+        0.9344675982964117,
+        0.9751505880935962,
+        0.9705673779864579,
+        0.9559640044403231,
+        0.8849861481290111,
+        0.8790642052509651,
+        0.8765605401415781,
+        0.8240587230884733,
+        0.7852669249997545,
+        0.8753986983414499
+      ],
+      [
+        0.9443635878030499,
+        0.9638848442698026,
+        0.8915030169098958,
+        0.91259176192447,
+        1.0,
+        0.8890269293232254,
+        0.9048878563749764,
+        0.8711304506176654,
+        0.9146172984937394,
+        0.9154645639440918,
+        0.9062637499307474,
+        0.9006146425183618,
+        0.8957297543924673,
+        0.8799007091073607,
+        0.8763680370289815,
+        0.8055169622133312,
+        0.8640183085133722,
+        0.7446413996526623,
+        0.7166080941815425,
+        0.8637199129729922
+      ],
+      [
+        0.9511338333408095,
+        0.9286336243434554,
+        0.8977591702334535,
+        0.8989827466993381,
+        0.8890269293232254,
+        1.0,
+        0.9199686120963274,
+        0.8959286594162235,
+        0.9319680608164491,
+        0.9132325870913881,
+        0.8949291801677841,
+        0.889200746623386,
+        0.8864524090758782,
+        0.8808279557698957,
+        0.9823549658290356,
+        0.7846789873071175,
+        0.8916606242316404,
+        0.718672070836845,
+        0.7381316200655034,
+        0.8582949931265279
+      ],
+      [
+        0.9636802039163636,
+        0.9489502821781147,
+        0.9124700372661757,
+        0.9244802710710293,
+        0.9048878563749764,
+        0.9199686120963274,
+        1.0,
+        0.9018143145965924,
+        0.988385039608562,
+        0.8860690741988874,
+        0.8770817482405909,
+        0.9144377570774577,
+        0.9157643848698613,
+        0.9009222132797675,
+        0.9056092363180376,
+        0.7925141859906889,
+        0.8983355756132917,
+        0.7245328867913572,
+        0.7163592485366463,
+        0.8346275478968344
+      ],
+      [
+        0.9237969272483072,
+        0.9072406938789019,
+        0.8722061137040056,
+        0.8817783949902176,
+        0.8711304506176654,
+        0.8959286594162235,
+        0.9018143145965924,
+        1.0,
+        0.9545396138580357,
+        0.8423883828328902,
+        0.8240641208131453,
+        0.8707204798214984,
+        0.8741460303554158,
+        0.8541699991214917,
+        0.8832001079998031,
+        0.7462510320163812,
+        0.9923738762228269,
+        0.6620927322979839,
+        0.6634163744430764,
+        0.7940912323834076
+      ],
+      [
+        0.9720562115087206,
+        0.9567287170019826,
+        0.9198595157889128,
+        0.9306282836374482,
+        0.9146172984937394,
+        0.9319680608164491,
+        0.988385039608562,
+        0.9545396138580357,
+        1.0,
+        0.8910523257417662,
+        0.8788538457289475,
+        0.9197905271674386,
+        0.9218088888104238,
+        0.9051190189078858,
+        0.917816824827003,
+        0.794231645486674,
+        0.9496258351700078,
+        0.7191002204694232,
+        0.7139407925857656,
+        0.8387513726759679
+      ],
+      [
+        0.9675706816541164,
+        0.9529890386089129,
+        0.9104580972470211,
+        0.926923694307483,
+        0.9154645639440918,
+        0.9132325870913881,
+        0.8860690741988874,
+        0.8423883828328902,
+        0.8910523257417662,
+        1.0,
+        0.9785129529404318,
+        0.9172674043673409,
+        0.9093505918878222,
+        0.9019273561888791,
+        0.8975821349240601,
+        0.82671276475667,
+        0.8375155704359684,
+        0.7704126563228542,
+        0.755581470858222,
+        0.9390744607657168
+      ],
+      [
+        0.9519990852756494,
+        0.9470979999451702,
+        0.8933314656111364,
+        0.9344675982964117,
+        0.9062637499307474,
+        0.8949291801677841,
+        0.8770817482405909,
+        0.8240641208131453,
+        0.8788538457289475,
+        0.9785129529404318,
+        1.0,
+        0.9326097719175775,
+        0.9157847379395829,
+        0.9109403846502115,
+        0.8784360746922463,
+        0.8902292413739756,
+        0.8191442413122115,
+        0.8447534011788458,
+        0.8229370351069434,
+        0.9198504802224684
+      ],
+      [
+        0.9461855171953846,
+        0.9601715147303455,
+        0.8920454102399101,
+        0.9751505880935962,
+        0.9006146425183618,
+        0.889200746623386,
+        0.9144377570774577,
+        0.8707204798214984,
+        0.9197905271674386,
+        0.9172674043673409,
+        0.9326097719175775,
+        1.0,
+        0.9939934856468731,
+        0.9762404430322209,
+        0.8743025704004022,
+        0.908533228421854,
+        0.8662038268132819,
+        0.8574161001279723,
+        0.825288492512269,
+        0.8664050332145348
+      ],
+      [
+        0.9425307670345925,
+        0.9562456495805046,
+        0.8887604837862646,
+        0.9705673779864579,
+        0.8957297543924673,
+        0.8864524090758782,
+        0.9157643848698613,
+        0.8741460303554158,
+        0.9218088888104238,
+        0.9093505918878222,
+        0.9157847379395829,
+        0.9939934856468731,
+        1.0,
+        0.9680468927459656,
+        0.8714784378237307,
+        0.8661647888969624,
+        0.8693768127862077,
+        0.8103748384431377,
+        0.779077340979694,
+        0.85867536721878
+      ],
+      [
+        0.9308151791836229,
+        0.9407845548893213,
+        0.8756291041522027,
+        0.9559640044403231,
+        0.8799007091073607,
+        0.8808279557698957,
+        0.9009222132797675,
+        0.8541699991214917,
+        0.9051190189078858,
+        0.9019273561888791,
+        0.9109403846502115,
+        0.9762404430322209,
+        0.9680468927459656,
+        1.0,
+        0.8660295415282897,
+        0.8721936608187896,
+        0.8487632891669062,
+        0.8210736483725036,
+        0.7927625853949198,
+        0.8519164964852189
+      ],
+      [
+        0.9358466209350451,
+        0.9141552695513784,
+        0.8813609904360022,
+        0.8849861481290111,
+        0.8763680370289815,
+        0.9823549658290356,
+        0.9056092363180376,
+        0.8832001079998031,
+        0.917816824827003,
+        0.8975821349240601,
+        0.8784360746922463,
+        0.8743025704004022,
+        0.8714784378237307,
+        0.8660295415282897,
+        1.0,
+        0.7668551692862874,
+        0.8782494049752887,
+        0.7003236024251434,
+        0.727000530929442,
+        0.8425045295430323
+      ],
+      [
+        0.8360566692896421,
+        0.8557408530837136,
+        0.7864556560602374,
+        0.8790642052509651,
+        0.8055169622133312,
+        0.7846789873071175,
+        0.7925141859906889,
+        0.7462510320163812,
+        0.794231645486674,
+        0.82671276475667,
+        0.8902292413739756,
+        0.908533228421854,
+        0.8661647888969624,
+        0.8721936608187896,
+        0.7668551692862874,
+        1.0,
+        0.7428702793496473,
+        0.984297119194757,
+        0.9380224058691774,
+        0.7830367468797881
+      ],
+      [
+        0.918656553149363,
+        0.9015847899407563,
+        0.8684768426463597,
+        0.8765605401415781,
+        0.8640183085133722,
+        0.8916606242316404,
+        0.8983355756132917,
+        0.9923738762228269,
+        0.9496258351700078,
+        0.8375155704359684,
+        0.8191442413122115,
+        0.8662038268132819,
+        0.8693768127862077,
+        0.8487632891669062,
+        0.8782494049752887,
+        0.7428702793496473,
+        1.0,
+        0.6572637776042868,
+        0.6588863532959681,
+        0.7887284160224252
+      ],
+      [
+        0.7681088086628497,
+        0.7932276384596305,
+        0.7214316563016847,
+        0.8240587230884733,
+        0.7446413996526623,
+        0.718672070836845,
+        0.7245328867913572,
+        0.6620927322979839,
+        0.7191002204694232,
+        0.7704126563228542,
+        0.8447534011788458,
+        0.8574161001279723,
+        0.8103748384431377,
+        0.8210736483725036,
+        0.7003236024251434,
+        0.984297119194757,
+        0.6572637776042868,
+        1.0,
+        0.9344803431766476,
+        0.7304045175600252
+      ],
+      [
+        0.7585144807326137,
+        0.7664297361289769,
+        0.7127143240693097,
+        0.7852669249997545,
+        0.7166080941815425,
+        0.7381316200655034,
+        0.7163592485366463,
+        0.6634163744430764,
+        0.7139407925857656,
+        0.755581470858222,
+        0.8229370351069434,
+        0.825288492512269,
+        0.779077340979694,
+        0.7927625853949198,
+        0.727000530929442,
+        0.9380224058691774,
+        0.6588863532959681,
+        0.9344803431766476,
+        1.0,
+        0.7154257533869047
+      ],
+      [
+        0.9099650077718605,
+        0.897745938457183,
+        0.8580648520891674,
+        0.8753986983414499,
+        0.8637199129729922,
+        0.8582949931265279,
+        0.8346275478968344,
+        0.7940912323834076,
+        0.8387513726759679,
+        0.9390744607657168,
+        0.9198504802224684,
+        0.8664050332145348,
+        0.85867536721878,
+        0.8519164964852189,
+        0.8425045295430323,
+        0.7830367468797881,
+        0.7887284160224252,
+        0.7304045175600252,
+        0.7154257533869047,
+        1.0
+      ]
+    ]
+  },
+  "korelasi_tinggi": [
+    {
+      "variabel_1": "revenue",
+      "variabel_2": "cogs",
+      "korelasi": 0.9939934856468731
+    },
+    {
+      "variabel_1": "long_term_debt",
+      "variabel_2": "interest_expense",
+      "korelasi": 0.9923738762228269
+    },
+    {
+      "variabel_1": "current_liabilities",
+      "variabel_2": "total_liabilities",
+      "korelasi": 0.988385039608562
+    },
+    {
+      "variabel_1": "total_assets",
+      "variabel_2": "current_assets",
+      "korelasi": 0.9848606061463033
+    },
+    {
+      "variabel_1": "ebit",
+      "variabel_2": "net_income",
+      "korelasi": 0.984297119194757
+    },
+    {
+      "variabel_1": "ppe_net",
+      "variabel_2": "depreciation",
+      "korelasi": 0.9823549658290356
+    },
+    {
+      "variabel_1": "equity",
+      "variabel_2": "retained_earnings",
+      "korelasi": 0.9785129529404318
+    },
+    {
+      "variabel_1": "current_assets",
+      "variabel_2": "receivables",
+      "korelasi": 0.978260635462777
+    },
+    {
+      "variabel_1": "revenue",
+      "variabel_2": "sga",
+      "korelasi": 0.9762404430322209
+    },
+    {
+      "variabel_1": "receivables",
+      "variabel_2": "revenue",
+      "korelasi": 0.9751505880935962
+    },
+    {
+      "variabel_1": "total_assets",
+      "variabel_2": "total_liabilities",
+      "korelasi": 0.9720562115087206
+    },
+    {
+      "variabel_1": "receivables",
+      "variabel_2": "cogs",
+      "korelasi": 0.9705673779864579
+    },
+    {
+      "variabel_1": "cogs",
+      "variabel_2": "sga",
+      "korelasi": 0.9680468927459656
+    },
+    {
+      "variabel_1": "total_assets",
+      "variabel_2": "equity",
+      "korelasi": 0.9675706816541164
+    },
+    {
+      "variabel_1": "current_assets",
+      "variabel_2": "inventory",
+      "korelasi": 0.9638848442698026
+    },
+    {
+      "variabel_1": "total_assets",
+      "variabel_2": "current_liabilities",
+      "korelasi": 0.9636802039163636
+    },
+    {
+      "variabel_1": "current_assets",
+      "variabel_2": "revenue",
+      "korelasi": 0.9601715147303455
+    },
+    {
+      "variabel_1": "total_assets",
+      "variabel_2": "receivables",
+      "korelasi": 0.9573997284351898
+    },
+    {
+      "variabel_1": "current_assets",
+      "variabel_2": "total_liabilities",
+      "korelasi": 0.9567287170019826
+    },
+    {
+      "variabel_1": "current_assets",
+      "variabel_2": "cogs",
+      "korelasi": 0.9562456495805046
+    },
+    {
+      "variabel_1": "receivables",
+      "variabel_2": "sga",
+      "korelasi": 0.9559640044403231
+    },
+    {
+      "variabel_1": "long_term_debt",
+      "variabel_2": "total_liabilities",
+      "korelasi": 0.9545396138580357
+    },
+    {
+      "variabel_1": "current_assets",
+      "variabel_2": "equity",
+      "korelasi": 0.9529890386089129
+    },
+    {
+      "variabel_1": "total_assets",
+      "variabel_2": "retained_earnings",
+      "korelasi": 0.9519990852756494
+    },
+    {
+      "variabel_1": "total_assets",
+      "variabel_2": "ppe_net",
+      "korelasi": 0.9511338333408095
+    },
+    {
+      "variabel_1": "current_assets",
+      "variabel_2": "cash",
+      "korelasi": 0.9509228113633063
+    },
+    {
+      "variabel_1": "total_liabilities",
+      "variabel_2": "interest_expense",
+      "korelasi": 0.9496258351700078
+    },
+    {
+      "variabel_1": "current_assets",
+      "variabel_2": "current_liabilities",
+      "korelasi": 0.9489502821781147
+    },
+    {
+      "variabel_1": "current_assets",
+      "variabel_2": "retained_earnings",
+      "korelasi": 0.9470979999451702
+    },
+    {
+      "variabel_1": "total_assets",
+      "variabel_2": "revenue",
+      "korelasi": 0.9461855171953846
+    },
+    {
+      "variabel_1": "total_assets",
+      "variabel_2": "inventory",
+      "korelasi": 0.9443635878030499
+    },
+    {
+      "variabel_1": "total_assets",
+      "variabel_2": "cash",
+      "korelasi": 0.9437152438738806
+    },
+    {
+      "variabel_1": "total_assets",
+      "variabel_2": "cogs",
+      "korelasi": 0.9425307670345925
+    },
+    {
+      "variabel_1": "current_assets",
+      "variabel_2": "sga",
+      "korelasi": 0.9407845548893213
+    },
+    {
+      "variabel_1": "equity",
+      "variabel_2": "market_value_equity",
+      "korelasi": 0.9390744607657168
+    },
+    {
+      "variabel_1": "ebit",
+      "variabel_2": "operating_cash_flow",
+      "korelasi": 0.9380224058691774
+    },
+    {
+      "variabel_1": "total_assets",
+      "variabel_2": "depreciation",
+      "korelasi": 0.9358466209350451
+    },
+    {
+      "variabel_1": "net_income",
+      "variabel_2": "operating_cash_flow",
+      "korelasi": 0.9344803431766476
+    },
+    {
+      "variabel_1": "receivables",
+      "variabel_2": "retained_earnings",
+      "korelasi": 0.9344675982964117
+    },
+    {
+      "variabel_1": "retained_earnings",
+      "variabel_2": "revenue",
+      "korelasi": 0.9326097719175775
+    },
+    {
+      "variabel_1": "ppe_net",
+      "variabel_2": "total_liabilities",
+      "korelasi": 0.9319680608164491
+    },
+    {
+      "variabel_1": "total_assets",
+      "variabel_2": "sga",
+      "korelasi": 0.9308151791836229
+    },
+    {
+      "variabel_1": "receivables",
+      "variabel_2": "total_liabilities",
+      "korelasi": 0.9306282836374482
+    },
+    {
+      "variabel_1": "current_assets",
+      "variabel_2": "ppe_net",
+      "korelasi": 0.9286336243434554
+    },
+    {
+      "variabel_1": "receivables",
+      "variabel_2": "equity",
+      "korelasi": 0.926923694307483
+    },
+    {
+      "variabel_1": "receivables",
+      "variabel_2": "current_liabilities",
+      "korelasi": 0.9244802710710293
+    },
+    {
+      "variabel_1": "total_assets",
+      "variabel_2": "long_term_debt",
+      "korelasi": 0.9237969272483072
+    },
+    {
+      "variabel_1": "total_liabilities",
+      "variabel_2": "cogs",
+      "korelasi": 0.9218088888104238
+    },
+    {
+      "variabel_1": "ppe_net",
+      "variabel_2": "current_liabilities",
+      "korelasi": 0.9199686120963274
+    },
+    {
+      "variabel_1": "cash",
+      "variabel_2": "total_liabilities",
+      "korelasi": 0.9198595157889128
+    },
+    {
+      "variabel_1": "retained_earnings",
+      "variabel_2": "market_value_equity",
+      "korelasi": 0.9198504802224684
+    },
+    {
+      "variabel_1": "total_liabilities",
+      "variabel_2": "revenue",
+      "korelasi": 0.9197905271674386
+    },
+    {
+      "variabel_1": "total_assets",
+      "variabel_2": "interest_expense",
+      "korelasi": 0.918656553149363
+    },
+    {
+      "variabel_1": "total_liabilities",
+      "variabel_2": "depreciation",
+      "korelasi": 0.917816824827003
+    },
+    {
+      "variabel_1": "equity",
+      "variabel_2": "revenue",
+      "korelasi": 0.9172674043673409
+    },
+    {
+      "variabel_1": "retained_earnings",
+      "variabel_2": "cogs",
+      "korelasi": 0.9157847379395829
+    },
+    {
+      "variabel_1": "current_liabilities",
+      "variabel_2": "cogs",
+      "korelasi": 0.9157643848698613
+    },
+    {
+      "variabel_1": "inventory",
+      "variabel_2": "equity",
+      "korelasi": 0.9154645639440918
+    },
+    {
+      "variabel_1": "inventory",
+      "variabel_2": "total_liabilities",
+      "korelasi": 0.9146172984937394
+    },
+    {
+      "variabel_1": "current_liabilities",
+      "variabel_2": "revenue",
+      "korelasi": 0.9144377570774577
+    },
+    {
+      "variabel_1": "current_assets",
+      "variabel_2": "depreciation",
+      "korelasi": 0.9141552695513784
+    },
+    {
+      "variabel_1": "ppe_net",
+      "variabel_2": "equity",
+      "korelasi": 0.9132325870913881
+    },
+    {
+      "variabel_1": "receivables",
+      "variabel_2": "inventory",
+      "korelasi": 0.91259176192447
+    },
+    {
+      "variabel_1": "cash",
+      "variabel_2": "current_liabilities",
+      "korelasi": 0.9124700372661757
+    },
+    {
+      "variabel_1": "retained_earnings",
+      "variabel_2": "sga",
+      "korelasi": 0.9109403846502115
+    },
+    {
+      "variabel_1": "cash",
+      "variabel_2": "equity",
+      "korelasi": 0.9104580972470211
+    },
+    {
+      "variabel_1": "total_assets",
+      "variabel_2": "market_value_equity",
+      "korelasi": 0.9099650077718605
+    },
+    {
+      "variabel_1": "equity",
+      "variabel_2": "cogs",
+      "korelasi": 0.9093505918878222
+    },
+    {
+      "variabel_1": "revenue",
+      "variabel_2": "ebit",
+      "korelasi": 0.908533228421854
+    },
+    {
+      "variabel_1": "current_assets",
+      "variabel_2": "long_term_debt",
+      "korelasi": 0.9072406938789019
+    },
+    {
+      "variabel_1": "inventory",
+      "variabel_2": "retained_earnings",
+      "korelasi": 0.9062637499307474
+    },
+    {
+      "variabel_1": "current_liabilities",
+      "variabel_2": "depreciation",
+      "korelasi": 0.9056092363180376
+    },
+    {
+      "variabel_1": "total_liabilities",
+      "variabel_2": "sga",
+      "korelasi": 0.9051190189078858
+    },
+    {
+      "variabel_1": "inventory",
+      "variabel_2": "current_liabilities",
+      "korelasi": 0.9048878563749764
+    },
+    {
+      "variabel_1": "cash",
+      "variabel_2": "receivables",
+      "korelasi": 0.9021806944289009
+    },
+    {
+      "variabel_1": "equity",
+      "variabel_2": "sga",
+      "korelasi": 0.9019273561888791
+    },
+    {
+      "variabel_1": "current_liabilities",
+      "variabel_2": "long_term_debt",
+      "korelasi": 0.9018143145965924
+    },
+    {
+      "variabel_1": "current_assets",
+      "variabel_2": "interest_expense",
+      "korelasi": 0.9015847899407563
+    },
+    {
+      "variabel_1": "current_liabilities",
+      "variabel_2": "sga",
+      "korelasi": 0.9009222132797675
+    },
+    {
+      "variabel_1": "inventory",
+      "variabel_2": "revenue",
+      "korelasi": 0.9006146425183618
+    },
+    {
+      "variabel_1": "receivables",
+      "variabel_2": "ppe_net",
+      "korelasi": 0.8989827466993381
+    },
+    {
+      "variabel_1": "current_liabilities",
+      "variabel_2": "interest_expense",
+      "korelasi": 0.8983355756132917
+    },
+    {
+      "variabel_1": "cash",
+      "variabel_2": "ppe_net",
+      "korelasi": 0.8977591702334535
+    },
+    {
+      "variabel_1": "current_assets",
+      "variabel_2": "market_value_equity",
+      "korelasi": 0.897745938457183
+    },
+    {
+      "variabel_1": "equity",
+      "variabel_2": "depreciation",
+      "korelasi": 0.8975821349240601
+    },
+    {
+      "variabel_1": "ppe_net",
+      "variabel_2": "long_term_debt",
+      "korelasi": 0.8959286594162235
+    },
+    {
+      "variabel_1": "inventory",
+      "variabel_2": "cogs",
+      "korelasi": 0.8957297543924673
+    },
+    {
+      "variabel_1": "ppe_net",
+      "variabel_2": "retained_earnings",
+      "korelasi": 0.8949291801677841
+    },
+    {
+      "variabel_1": "cash",
+      "variabel_2": "retained_earnings",
+      "korelasi": 0.8933314656111364
+    },
+    {
+      "variabel_1": "cash",
+      "variabel_2": "revenue",
+      "korelasi": 0.8920454102399101
+    },
+    {
+      "variabel_1": "ppe_net",
+      "variabel_2": "interest_expense",
+      "korelasi": 0.8916606242316404
+    },
+    {
+      "variabel_1": "cash",
+      "variabel_2": "inventory",
+      "korelasi": 0.8915030169098958
+    },
+    {
+      "variabel_1": "total_liabilities",
+      "variabel_2": "equity",
+      "korelasi": 0.8910523257417662
+    },
+    {
+      "variabel_1": "retained_earnings",
+      "variabel_2": "ebit",
+      "korelasi": 0.8902292413739756
+    },
+    {
+      "variabel_1": "ppe_net",
+      "variabel_2": "revenue",
+      "korelasi": 0.889200746623386
+    },
+    {
+      "variabel_1": "inventory",
+      "variabel_2": "ppe_net",
+      "korelasi": 0.8890269293232254
+    },
+    {
+      "variabel_1": "cash",
+      "variabel_2": "cogs",
+      "korelasi": 0.8887604837862646
+    },
+    {
+      "variabel_1": "ppe_net",
+      "variabel_2": "cogs",
+      "korelasi": 0.8864524090758782
+    },
+    {
+      "variabel_1": "current_liabilities",
+      "variabel_2": "equity",
+      "korelasi": 0.8860690741988874
+    },
+    {
+      "variabel_1": "receivables",
+      "variabel_2": "depreciation",
+      "korelasi": 0.8849861481290111
+    },
+    {
+      "variabel_1": "long_term_debt",
+      "variabel_2": "depreciation",
+      "korelasi": 0.8832001079998031
+    },
+    {
+      "variabel_1": "receivables",
+      "variabel_2": "long_term_debt",
+      "korelasi": 0.8817783949902176
+    },
+    {
+      "variabel_1": "cash",
+      "variabel_2": "depreciation",
+      "korelasi": 0.8813609904360022
+    },
+    {
+      "variabel_1": "ppe_net",
+      "variabel_2": "sga",
+      "korelasi": 0.8808279557698957
+    },
+    {
+      "variabel_1": "inventory",
+      "variabel_2": "sga",
+      "korelasi": 0.8799007091073607
+    },
+    {
+      "variabel_1": "receivables",
+      "variabel_2": "ebit",
+      "korelasi": 0.8790642052509651
+    },
+    {
+      "variabel_1": "total_liabilities",
+      "variabel_2": "retained_earnings",
+      "korelasi": 0.8788538457289475
+    },
+    {
+      "variabel_1": "retained_earnings",
+      "variabel_2": "depreciation",
+      "korelasi": 0.8784360746922463
+    },
+    {
+      "variabel_1": "depreciation",
+      "variabel_2": "interest_expense",
+      "korelasi": 0.8782494049752887
+    },
+    {
+      "variabel_1": "current_liabilities",
+      "variabel_2": "retained_earnings",
+      "korelasi": 0.8770817482405909
+    },
+    {
+      "variabel_1": "receivables",
+      "variabel_2": "interest_expense",
+      "korelasi": 0.8765605401415781
+    },
+    {
+      "variabel_1": "inventory",
+      "variabel_2": "depreciation",
+      "korelasi": 0.8763680370289815
+    },
+    {
+      "variabel_1": "cash",
+      "variabel_2": "sga",
+      "korelasi": 0.8756291041522027
+    },
+    {
+      "variabel_1": "receivables",
+      "variabel_2": "market_value_equity",
+      "korelasi": 0.8753986983414499
+    },
+    {
+      "variabel_1": "revenue",
+      "variabel_2": "depreciation",
+      "korelasi": 0.8743025704004022
+    },
+    {
+      "variabel_1": "long_term_debt",
+      "variabel_2": "cogs",
+      "korelasi": 0.8741460303554158
+    },
+    {
+      "variabel_1": "cash",
+      "variabel_2": "long_term_debt",
+      "korelasi": 0.8722061137040056
+    },
+    {
+      "variabel_1": "sga",
+      "variabel_2": "ebit",
+      "korelasi": 0.8721936608187896
+    },
+    {
+      "variabel_1": "cogs",
+      "variabel_2": "depreciation",
+      "korelasi": 0.8714784378237307
+    },
+    {
+      "variabel_1": "inventory",
+      "variabel_2": "long_term_debt",
+      "korelasi": 0.8711304506176654
+    },
+    {
+      "variabel_1": "long_term_debt",
+      "variabel_2": "revenue",
+      "korelasi": 0.8707204798214984
+    },
+    {
+      "variabel_1": "cogs",
+      "variabel_2": "interest_expense",
+      "korelasi": 0.8693768127862077
+    },
+    {
+      "variabel_1": "cash",
+      "variabel_2": "interest_expense",
+      "korelasi": 0.8684768426463597
+    },
+    {
+      "variabel_1": "revenue",
+      "variabel_2": "market_value_equity",
+      "korelasi": 0.8664050332145348
+    },
+    {
+      "variabel_1": "revenue",
+      "variabel_2": "interest_expense",
+      "korelasi": 0.8662038268132819
+    },
+    {
+      "variabel_1": "cogs",
+      "variabel_2": "ebit",
+      "korelasi": 0.8661647888969624
+    },
+    {
+      "variabel_1": "sga",
+      "variabel_2": "depreciation",
+      "korelasi": 0.8660295415282897
+    },
+    {
+      "variabel_1": "inventory",
+      "variabel_2": "interest_expense",
+      "korelasi": 0.8640183085133722
+    },
+    {
+      "variabel_1": "inventory",
+      "variabel_2": "market_value_equity",
+      "korelasi": 0.8637199129729922
+    },
+    {
+      "variabel_1": "cogs",
+      "variabel_2": "market_value_equity",
+      "korelasi": 0.85867536721878
+    },
+    {
+      "variabel_1": "ppe_net",
+      "variabel_2": "market_value_equity",
+      "korelasi": 0.8582949931265279
+    },
+    {
+      "variabel_1": "cash",
+      "variabel_2": "market_value_equity",
+      "korelasi": 0.8580648520891674
+    },
+    {
+      "variabel_1": "revenue",
+      "variabel_2": "net_income",
+      "korelasi": 0.8574161001279723
+    },
+    {
+      "variabel_1": "current_assets",
+      "variabel_2": "ebit",
+      "korelasi": 0.8557408530837136
+    },
+    {
+      "variabel_1": "long_term_debt",
+      "variabel_2": "sga",
+      "korelasi": 0.8541699991214917
+    },
+    {
+      "variabel_1": "sga",
+      "variabel_2": "market_value_equity",
+      "korelasi": 0.8519164964852189
+    },
+    {
+      "variabel_1": "sga",
+      "variabel_2": "interest_expense",
+      "korelasi": 0.8487632891669062
+    },
+    {
+      "variabel_1": "retained_earnings",
+      "variabel_2": "net_income",
+      "korelasi": 0.8447534011788458
+    },
+    {
+      "variabel_1": "depreciation",
+      "variabel_2": "market_value_equity",
+      "korelasi": 0.8425045295430323
+    },
+    {
+      "variabel_1": "long_term_debt",
+      "variabel_2": "equity",
+      "korelasi": 0.8423883828328902
+    },
+    {
+      "variabel_1": "total_liabilities",
+      "variabel_2": "market_value_equity",
+      "korelasi": 0.8387513726759679
+    },
+    {
+      "variabel_1": "equity",
+      "variabel_2": "interest_expense",
+      "korelasi": 0.8375155704359684
+    },
+    {
+      "variabel_1": "total_assets",
+      "variabel_2": "ebit",
+      "korelasi": 0.8360566692896421
+    },
+    {
+      "variabel_1": "current_liabilities",
+      "variabel_2": "market_value_equity",
+      "korelasi": 0.8346275478968344
+    },
+    {
+      "variabel_1": "equity",
+      "variabel_2": "ebit",
+      "korelasi": 0.82671276475667
+    },
+    {
+      "variabel_1": "revenue",
+      "variabel_2": "operating_cash_flow",
+      "korelasi": 0.825288492512269
+    },
+    {
+      "variabel_1": "long_term_debt",
+      "variabel_2": "retained_earnings",
+      "korelasi": 0.8240641208131453
+    },
+    {
+      "variabel_1": "receivables",
+      "variabel_2": "net_income",
+      "korelasi": 0.8240587230884733
+    },
+    {
+      "variabel_1": "retained_earnings",
+      "variabel_2": "operating_cash_flow",
+      "korelasi": 0.8229370351069434
+    },
+    {
+      "variabel_1": "sga",
+      "variabel_2": "net_income",
+      "korelasi": 0.8210736483725036
+    },
+    {
+      "variabel_1": "retained_earnings",
+      "variabel_2": "interest_expense",
+      "korelasi": 0.8191442413122115
+    },
+    {
+      "variabel_1": "cogs",
+      "variabel_2": "net_income",
+      "korelasi": 0.8103748384431377
+    },
+    {
+      "variabel_1": "inventory",
+      "variabel_2": "ebit",
+      "korelasi": 0.8055169622133312
+    }
+  ],
+  "outlier": [
+    {
+      "kolom": "market_value_equity",
+      "jumlah_outlier": 1,
+      "persen": 0.027777777777777776
+    }
+  ],
+  "benford_per_kolom": [
+    {
+      "kolom": "total_assets",
+      "n": 3600,
+      "mad": 0.0048087103890214,
+      "chi2": 11.758748463988901,
+      "p_value": 0.1622968647049355,
+      "kesesuaian": "Sangat sesuai"
+    },
+    {
+      "kolom": "current_assets",
+      "n": 3600,
+      "mad": 0.004270801104959057,
+      "chi2": 8.346108008571223,
+      "p_value": 0.4004119875686063,
+      "kesesuaian": "Sangat sesuai"
+    },
+    {
+      "kolom": "cash",
+      "n": 3600,
+      "mad": 0.009603952544403426,
+      "chi2": 30.678418806010363,
+      "p_value": 0.00016027204565553742,
+      "kesesuaian": "Cukup sesuai"
+    },
+    {
+      "kolom": "receivables",
+      "n": 3600,
+      "mad": 0.004281175329568377,
+      "chi2": 6.152787527561137,
+      "p_value": 0.6301219698833869,
+      "kesesuaian": "Sangat sesuai"
+    },
+    {
+      "kolom": "inventory",
+      "n": 3600,
+      "mad": 0.005286204752517577,
+      "chi2": 11.39961636957044,
+      "p_value": 0.18006788484574318,
+      "kesesuaian": "Sangat sesuai"
+    },
+    {
+      "kolom": "ppe_net",
+      "n": 3600,
+      "mad": 0.008252928730397641,
+      "chi2": 42.13708110805928,
+      "p_value": 1.2763388971814655e-06,
+      "kesesuaian": "Cukup sesuai"
+    },
+    {
+      "kolom": "current_liabilities",
+      "n": 3600,
+      "mad": 0.005772380482702951,
+      "chi2": 16.81019573596876,
+      "p_value": 0.03214731073104258,
+      "kesesuaian": "Sangat sesuai"
+    },
+    {
+      "kolom": "long_term_debt",
+      "n": 3600,
+      "mad": 0.007525802076701347,
+      "chi2": 20.990001294661944,
+      "p_value": 0.007174037740711978,
+      "kesesuaian": "Cukup sesuai"
+    },
+    {
+      "kolom": "total_liabilities",
+      "n": 3600,
+      "mad": 0.007654700371078861,
+      "chi2": 26.459624548693217,
+      "p_value": 0.0008759835106684697,
+      "kesesuaian": "Cukup sesuai"
+    },
+    {
+      "kolom": "equity",
+      "n": 3600,
+      "mad": 0.009960187675247386,
+      "chi2": 33.4113638815468,
+      "p_value": 5.1914957403321374e-05,
+      "kesesuaian": "Cukup sesuai"
+    },
+    {
+      "kolom": "retained_earnings",
+      "n": 3600,
+      "mad": 0.007442937564760971,
+      "chi2": 21.903004343317168,
+      "p_value": 0.005098756050034148,
+      "kesesuaian": "Cukup sesuai"
+    },
+    {
+      "kolom": "revenue",
+      "n": 3600,
+      "mad": 0.004953057397420894,
+      "chi2": 10.849034976782258,
+      "p_value": 0.21040068917166718,
+      "kesesuaian": "Sangat sesuai"
+    },
+    {
+      "kolom": "cogs",
+      "n": 3600,
+      "mad": 0.0063945971536754935,
+      "chi2": 16.82134788405617,
+      "p_value": 0.03202407419953785,
+      "kesesuaian": "Cukup sesuai"
+    },
+    {
+      "kolom": "sga",
+      "n": 3600,
+      "mad": 0.007746138035815555,
+      "chi2": 22.179542026187473,
+      "p_value": 0.0045939016600611005,
+      "kesesuaian": "Cukup sesuai"
+    },
+    {
+      "kolom": "depreciation",
+      "n": 3600,
+      "mad": 0.005954321721105331,
+      "chi2": 15.184596892079274,
+      "p_value": 0.05565392672783273,
+      "kesesuaian": "Sangat sesuai"
+    },
+    {
+      "kolom": "ebit",
+      "n": 3600,
+      "mad": 0.005564378691302165,
+      "chi2": 12.414526604549456,
+      "p_value": 0.13364483762019874,
+      "kesesuaian": "Sangat sesuai"
+    },
+    {
+      "kolom": "interest_expense",
+      "n": 3600,
+      "mad": 0.003290802298627522,
+      "chi2": 4.420307889425503,
+      "p_value": 0.8173520940636596,
+      "kesesuaian": "Sangat sesuai"
+    },
+    {
+      "kolom": "net_income",
+      "n": 3600,
+      "mad": 0.0040997511593002835,
+      "chi2": 12.16086559927257,
+      "p_value": 0.1441694868601029,
+      "kesesuaian": "Sangat sesuai"
+    },
+    {
+      "kolom": "operating_cash_flow",
+      "n": 3599,
+      "mad": 0.004387729149945344,
+      "chi2": 9.693076363080054,
+      "p_value": 0.28723207614681795,
+      "kesesuaian": "Sangat sesuai"
+    },
+    {
+      "kolom": "market_value_equity",
+      "n": 3600,
+      "mad": 0.0033032446802338223,
+      "chi2": 5.219049481119728,
+      "p_value": 0.7339278217037932,
+      "kesesuaian": "Sangat sesuai"
+    }
+  ],
+  "benford_per_kelompok": {
+    "semua": {
+      "n_baris": 3600,
+      "first_digit": {
+        "kind": "first_digit",
+        "digits": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n": 71999,
+        "observed_count": [
+          22126,
+          12521,
+          8866,
+          6991,
+          5542,
+          4861,
+          4110,
+          3618,
+          3364
+        ],
+        "observed_prop": [
+          0.30730982374755206,
+          0.17390519312768232,
+          0.12314059917498854,
+          0.09709857081348353,
+          0.07697329129571244,
+          0.06751482659481382,
+          0.05708412616841901,
+          0.05025069792636009,
+          0.04672287115098821
+        ],
+        "expected_prop": [
+          0.3010299956639812,
+          0.17609125905568124,
+          0.12493873660829993,
+          0.09691001300805642,
+          0.07918124604762482,
+          0.06694678963061322,
+          0.05799194697768673,
+          0.05115252244738129,
+          0.04575749056067514
+        ],
+        "z_scores": [
+          3.6694105184451784,
+          1.5350983357617967,
+          1.4535762047979481,
+          0.16472554678554233,
+          2.187192690341509,
+          0.6023924956043611,
+          1.0342302261524599,
+          1.0899241952242964,
+          1.23073880332938
+        ],
+        "chi2": 21.690061072715,
+        "dof": 8,
+        "p_value": 0.005523571734493243,
+        "mad": 0.0017781785430025826,
+        "conformity": "Sangat sesuai",
+        "small_sample": false
+      },
+      "last_digit": {
+        "kind": "last_digit",
+        "digits": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n": 71994,
+        "observed_count": [
+          7406,
+          7044,
+          7079,
+          7270,
+          7143,
+          7198,
+          7188,
+          7400,
+          7153,
+          7113
+        ],
+        "observed_prop": [
+          0.10286968358474317,
+          0.09784148679056588,
+          0.0983276384143123,
+          0.1009806372753285,
+          0.09921660138344862,
+          0.09998055393505015,
+          0.09984165347112259,
+          0.10278634330638664,
+          0.09935550184737617,
+          0.09879989999166597
+        ],
+        "expected_prop": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "z_scores": [
+          2.560404519981587,
+          1.924340903178793,
+          1.4895317901300058,
+          0.8708605378491389,
+          0.6944522691265008,
+          0.011180805764112121,
+          0.13541198092091908,
+          2.4858658148875055,
+          0.5702210939697062,
+          1.0671457945968967
+        ],
+        "chi2": 19.374447870655885,
+        "dof": 9,
+        "p_value": 0.022190736453920158,
+        "mad": 0.0013273328332916653,
+        "conformity": "Tidak seragam (p < 0,05)",
+        "small_sample": false
+      }
+    },
+    "non_fraud": {
+      "n_baris": 3381,
+      "first_digit": {
+        "kind": "first_digit",
+        "digits": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n": 67620,
+        "observed_count": [
+          20774,
+          11730,
+          8327,
+          6605,
+          5230,
+          4562,
+          3850,
+          3395,
+          3147
+        ],
+        "observed_prop": [
+          0.3072167997633836,
+          0.17346938775510204,
+          0.12314404022478556,
+          0.0976782017154688,
+          0.07734398107068914,
+          0.06746524696835256,
+          0.056935817805383024,
+          0.05020703933747412,
+          0.04653948535936114
+        ],
+        "expected_prop": [
+          0.3010299956639812,
+          0.17609125905568124,
+          0.12493873660829993,
+          0.09691001300805642,
+          0.07918124604762482,
+          0.06694678963061322,
+          0.05799194697768673,
+          0.05115252244738129,
+          0.04575749056067514
+        ],
+        "z_scores": [
+          3.503083001569126,
+          1.784900292495284,
+          1.4056194870909853,
+          0.6687365754303896,
+          1.7622184593118122,
+          0.5317334774294321,
+          1.166788542024081,
+          1.1072605456592797,
+          0.9639508654224406
+        ],
+        "chi2": 19.93294673961151,
+        "dof": 8,
+        "p_value": 0.010592733904186365,
+        "mad": 0.0018345433207200288,
+        "conformity": "Sangat sesuai",
+        "small_sample": false
+      },
+      "last_digit": {
+        "kind": "last_digit",
+        "digits": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n": 67615,
+        "observed_count": [
+          6752,
+          6600,
+          6702,
+          6838,
+          6702,
+          6815,
+          6757,
+          6971,
+          6764,
+          6714
+        ],
+        "observed_prop": [
+          0.09985949863196036,
+          0.09761147674332618,
+          0.09912001774754123,
+          0.10113140575316128,
+          0.09912001774754123,
+          0.10079124454632847,
+          0.09993344672040227,
+          0.10309842490571619,
+          0.10003697404422096,
+          0.09929749315980183
+        ],
+        "expected_prop": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "z_scores": [
+          0.11537181596709643,
+          2.063873596744649,
+          0.7563263491176043,
+          0.9742508903887662,
+          0.7563263491176043,
+          0.6794118051395294,
+          0.05127636265204807,
+          2.6791899485691277,
+          0.025638181326019093,
+          0.6024972611614785
+        ],
+        "chi2": 13.035642978629005,
+        "dof": 9,
+        "p_value": 0.16100007712939093,
+        "mad": 0.001011609849885381,
+        "conformity": "Seragam (tidak ada bukti penyimpangan)",
+        "small_sample": false
+      }
+    },
+    "fraud": {
+      "n_baris": 219,
+      "first_digit": {
+        "kind": "first_digit",
+        "digits": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n": 4379,
+        "observed_count": [
+          1352,
+          791,
+          539,
+          386,
+          312,
+          299,
+          260,
+          223,
+          217
+        ],
+        "observed_prop": [
+          0.30874628910710206,
+          0.18063484813884448,
+          0.12308746289107102,
+          0.08814797899063713,
+          0.07124914364010047,
+          0.06828042932176295,
+          0.0593742863667504,
+          0.05092486869148207,
+          0.04955469285224937
+        ],
+        "expected_prop": [
+          0.3010299956639812,
+          0.17609125905568124,
+          0.12493873660829993,
+          0.09691001300805642,
+          0.07918124604762482,
+          0.06694678963061322,
+          0.05799194697768673,
+          0.05115252244738129,
+          0.04575749056067514
+        ],
+        "z_scores": [
+          1.0966993541944987,
+          0.7695284498714089,
+          0.34765029921150054,
+          1.9343983657915553,
+          1.9159338534498898,
+          0.3228764491118781,
+          0.35904568306812074,
+          0.03408365178877835,
+          1.166356154193708
+        ],
+        "chi2": 10.093261342442975,
+        "dof": 8,
+        "p_value": 0.25854113427235603,
+        "mad": 0.004171791977349277,
+        "conformity": "Sangat sesuai",
+        "small_sample": false
+      },
+      "last_digit": {
+        "kind": "last_digit",
+        "digits": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n": 4379,
+        "observed_count": [
+          654,
+          444,
+          377,
+          432,
+          441,
+          383,
+          431,
+          429,
+          389,
+          399
+        ],
+        "observed_prop": [
+          0.14934916647636445,
+          0.10139301210321991,
+          0.08609271523178808,
+          0.09865266042475451,
+          0.10070792418360357,
+          0.08746289107102079,
+          0.09842429778488239,
+          0.09796757250513816,
+          0.08883306691025349,
+          0.09111669330897465
+        ],
+        "expected_prop": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "z_scores": [
+          10.860255163631159,
+          0.2820845497047035,
+          3.0424833575293264,
+          0.27201010150096677,
+          0.13096782664861312,
+          2.7402499114171395,
+          0.32238234251966563,
+          0.42312682455706024,
+          2.4380164653049556,
+          1.9342940551179826
+        ],
+        "chi2": 131.38821648778259,
+        "dof": 9,
+        "p_value": 6.1447835213991474e-24,
+        "mad": 0.010290020552637589,
+        "conformity": "Tidak seragam (p < 0,05)",
+        "small_sample": false
+      }
+    }
+  },
+  "distribusi_kelas": [
+    {
+      "kelompok": "Semua",
+      "n": 3600,
+      "fraud": 219,
+      "non_fraud": 3381,
+      "proporsi_fraud": 0.060833333333333336,
+      "ci95_bawah": 0.05348360562257569,
+      "ci95_atas": 0.06911930681666366
+    }
+  ],
+  "distribusi_per_tahun": [
+    {
+      "kelompok": "2018",
+      "n": 600,
+      "fraud": 37,
+      "non_fraud": 563,
+      "proporsi_fraud": 0.06166666666666667,
+      "ci95_bawah": 0.045067361772116676,
+      "ci95_atas": 0.08384306278322762
+    },
+    {
+      "kelompok": "2019",
+      "n": 600,
+      "fraud": 46,
+      "non_fraud": 554,
+      "proporsi_fraud": 0.07666666666666666,
+      "ci95_bawah": 0.05796841836178705,
+      "ci95_atas": 0.10075115516314621
+    },
+    {
+      "kelompok": "2020",
+      "n": 600,
+      "fraud": 30,
+      "non_fraud": 570,
+      "proporsi_fraud": 0.05,
+      "ci95_bawah": 0.03524526778459468,
+      "ci95_atas": 0.07048026312773596
+    },
+    {
+      "kelompok": "2021",
+      "n": 600,
+      "fraud": 32,
+      "non_fraud": 568,
+      "proporsi_fraud": 0.05333333333333334,
+      "ci95_bawah": 0.038029103590111496,
+      "ci95_atas": 0.07432068264879449
+    },
+    {
+      "kelompok": "2022",
+      "n": 600,
+      "fraud": 43,
+      "non_fraud": 557,
+      "proporsi_fraud": 0.07166666666666667,
+      "ci95_bawah": 0.05363893908574288,
+      "ci95_atas": 0.0951442514493274
+    },
+    {
+      "kelompok": "2023",
+      "n": 600,
+      "fraud": 31,
+      "non_fraud": 569,
+      "proporsi_fraud": 0.051666666666666666,
+      "ci95_bawah": 0.036634743907307504,
+      "ci95_atas": 0.0724029146683108
+    }
+  ],
+  "distribusi_per_sektor": [
+    {
+      "kelompok": "Infrastruktur",
+      "n": 570,
+      "fraud": 33,
+      "non_fraud": 537,
+      "proporsi_fraud": 0.05789473684210526,
+      "ci95_bawah": 0.041518206652074285,
+      "ci95_atas": 0.08019042514358897
+    },
+    {
+      "kelompok": "Jasa",
+      "n": 648,
+      "fraud": 33,
+      "non_fraud": 615,
+      "proporsi_fraud": 0.05092592592592592,
+      "ci95_bawah": 0.03648913462817659,
+      "ci95_atas": 0.07065572072829412
+    },
+    {
+      "kelompok": "Manufaktur",
+      "n": 654,
+      "fraud": 39,
+      "non_fraud": 615,
+      "proporsi_fraud": 0.05963302752293578,
+      "ci95_bawah": 0.04392687142802891,
+      "ci95_atas": 0.0804822209502631
+    },
+    {
+      "kelompok": "Perdagangan",
+      "n": 588,
+      "fraud": 39,
+      "non_fraud": 549,
+      "proporsi_fraud": 0.0663265306122449,
+      "ci95_bawah": 0.04889601749360488,
+      "ci95_atas": 0.0893867229277434
+    },
+    {
+      "kelompok": "Pertambangan",
+      "n": 558,
+      "fraud": 34,
+      "non_fraud": 524,
+      "proporsi_fraud": 0.06093189964157706,
+      "ci95_bawah": 0.04392805044944725,
+      "ci95_atas": 0.08393979855459283
+    },
+    {
+      "kelompok": "Properti",
+      "n": 582,
+      "fraud": 41,
+      "non_fraud": 541,
+      "proporsi_fraud": 0.070446735395189,
+      "ci95_bawah": 0.052351121537969836,
+      "ci95_atas": 0.09417565209374618
+    }
+  ],
+  "perbandingan_kelompok": [
+    {
+      "variabel": "operating_cash_flow",
+      "n_fraud": 219,
+      "n_non_fraud": 3381,
+      "median_fraud": 87107.0,
+      "median_non_fraud": 174202.0,
+      "U": 303918.0,
+      "p_value": 8.671601210227104e-06,
+      "efek_rank_biserial": -0.17908700108989395,
+      "q_value": 0.00017343202420454207
+    },
+    {
+      "variabel": "depreciation",
+      "n_fraud": 219,
+      "n_non_fraud": 3381,
+      "median_fraud": 24205.0,
+      "median_non_fraud": 31735.0,
+      "U": 339876.0,
+      "p_value": 0.041790304038925294,
+      "efek_rank_biserial": -0.08196083674684884,
+      "q_value": 0.41790304038925297
+    },
+    {
+      "variabel": "market_value_equity",
+      "n_fraud": 219,
+      "n_non_fraud": 3381,
+      "median_fraud": 1227958.0,
+      "median_non_fraud": 1114467.0,
+      "U": 387994.0,
+      "p_value": 0.23310699266863288,
+      "efek_rank_biserial": 0.048010707161562305,
+      "q_value": 0.954980779570389
+    },
+    {
+      "variabel": "ebit",
+      "n_fraud": 219,
+      "n_non_fraud": 3381,
+      "median_fraud": 199412.0,
+      "median_non_fraud": 246584.0,
+      "U": 354166.5,
+      "p_value": 0.2815230359482086,
+      "efek_rank_biserial": -0.0433607630068108,
+      "q_value": 0.954980779570389
+    },
+    {
+      "variabel": "ppe_net",
+      "n_fraud": 219,
+      "n_non_fraud": 3381,
+      "median_fraud": 390672.0,
+      "median_non_fraud": 449901.0,
+      "U": 356254.0,
+      "p_value": 0.3488298413746401,
+      "efek_rank_biserial": -0.03772221614474658,
+      "q_value": 0.954980779570389
+    },
+    {
+      "variabel": "net_income",
+      "n_fraud": 219,
+      "n_non_fraud": 3381,
+      "median_fraud": 130128.0,
+      "median_non_fraud": 166591.0,
+      "U": 356821.5,
+      "p_value": 0.3687645783055141,
+      "efek_rank_biserial": -0.036189341728353086,
+      "q_value": 0.954980779570389
+    },
+    {
+      "variabel": "retained_earnings",
+      "n_fraud": 219,
+      "n_non_fraud": 3381,
+      "median_fraud": 687477.0,
+      "median_non_fraud": 752468.0,
+      "U": 359548.5,
+      "p_value": 0.47408686520408716,
+      "efek_rank_biserial": -0.028823441228784552,
+      "q_value": 0.954980779570389
+    },
+    {
+      "variabel": "sga",
+      "n_fraud": 219,
+      "n_non_fraud": 3381,
+      "median_fraud": 111553.0,
+      "median_non_fraud": 126297.0,
+      "U": 360002.5,
+      "p_value": 0.4930990516189476,
+      "efek_rank_biserial": -0.027597141695669736,
+      "q_value": 0.954980779570389
+    },
+    {
+      "variabel": "cash",
+      "n_fraud": 219,
+      "n_non_fraud": 3381,
+      "median_fraud": 109671.0,
+      "median_non_fraud": 115173.0,
+      "U": 361515.5,
+      "p_value": 0.5592967492779961,
+      "efek_rank_biserial": -0.02351037695205138,
+      "q_value": 0.954980779570389
+    },
+    {
+      "variabel": "revenue",
+      "n_fraud": 219,
+      "n_non_fraud": 3381,
+      "median_fraud": 1266000.0,
+      "median_non_fraud": 1388456.0,
+      "U": 363127.0,
+      "p_value": 0.6342334892096884,
+      "efek_rank_biserial": -0.01915755382955242,
+      "q_value": 0.954980779570389
+    },
+    {
+      "variabel": "equity",
+      "n_fraud": 219,
+      "n_non_fraud": 3381,
+      "median_fraud": 948653.0,
+      "median_non_fraud": 977616.0,
+      "U": 363319.0,
+      "p_value": 0.6434388519032375,
+      "efek_rank_biserial": -0.018638942573257267,
+      "q_value": 0.954980779570389
+    },
+    {
+      "variabel": "total_assets",
+      "n_fraud": 219,
+      "n_non_fraud": 3381,
+      "median_fraud": 1794480.0,
+      "median_non_fraud": 1851588.0,
+      "U": 363650.0,
+      "p_value": 0.6594370802592007,
+      "efek_rank_biserial": -0.01774487837620653,
+      "q_value": 0.954980779570389
+    },
+    {
+      "variabel": "receivables",
+      "n_fraud": 219,
+      "n_non_fraud": 3381,
+      "median_fraud": 232028.0,
+      "median_non_fraud": 237664.0,
+      "U": 376210.5,
+      "p_value": 0.6877715941637954,
+      "efek_rank_biserial": 0.016182291856587705,
+      "q_value": 0.954980779570389
+    },
+    {
+      "variabel": "total_liabilities",
+      "n_fraud": 219,
+      "n_non_fraud": 3381,
+      "median_fraud": 799784.0,
+      "median_non_fraud": 816844.0,
+      "U": 366635.0,
+      "p_value": 0.8099910167758367,
+      "efek_rank_biserial": -0.009682094000991293,
+      "q_value": 0.954980779570389
+    },
+    {
+      "variabel": "cogs",
+      "n_fraud": 219,
+      "n_non_fraud": 3381,
+      "median_fraud": 924268.0,
+      "median_non_fraud": 895383.0,
+      "U": 366908.0,
+      "p_value": 0.8242181058121358,
+      "efek_rank_biserial": -0.00894469362094652,
+      "q_value": 0.954980779570389
+    },
+    {
+      "variabel": "long_term_debt",
+      "n_fraud": 219,
+      "n_non_fraud": 3381,
+      "median_fraud": 245942.0,
+      "median_non_fraud": 263837.0,
+      "U": 367653.0,
+      "p_value": 0.8633245770184669,
+      "efek_rank_biserial": -0.006932373902509226,
+      "q_value": 0.954980779570389
+    },
+    {
+      "variabel": "current_liabilities",
+      "n_fraud": 219,
+      "n_non_fraud": 3381,
+      "median_fraud": 551539.0,
+      "median_non_fraud": 547233.0,
+      "U": 368086.0,
+      "p_value": 0.8862149413699151,
+      "efek_rank_biserial": -0.00576279747555164,
+      "q_value": 0.954980779570389
+    },
+    {
+      "variabel": "interest_expense",
+      "n_fraud": 219,
+      "n_non_fraud": 3381,
+      "median_fraud": 21021.0,
+      "median_non_fraud": 22017.0,
+      "U": 368489.0,
+      "p_value": 0.9076054221425812,
+      "efek_rank_biserial": -0.0046742540573903035,
+      "q_value": 0.954980779570389
+    },
+    {
+      "variabel": "inventory",
+      "n_fraud": 219,
+      "n_non_fraud": 3381,
+      "median_fraud": 158085.0,
+      "median_non_fraud": 156054.0,
+      "U": 371590.5,
+      "p_value": 0.9267442034838994,
+      "efek_rank_biserial": 0.003703208501983246,
+      "q_value": 0.954980779570389
+    },
+    {
+      "variabel": "current_assets",
+      "n_fraud": 219,
+      "n_non_fraud": 3381,
+      "median_fraud": 582896.0,
+      "median_non_fraud": 581025.0,
+      "U": 369377.5,
+      "p_value": 0.954980779570389,
+      "efek_rank_biserial": -0.0022743264468780833,
+      "q_value": 0.954980779570389
+    }
+  ]
+}

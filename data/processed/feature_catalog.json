@@ -1,0 +1,290 @@
+[
+  {
+    "name": "dsri",
+    "label": "Indeks Piutang terhadap Penjualan (DSRI)",
+    "group": "Beneish",
+    "formula": "(Piutang/Pendapatan)t / (Piutang/Pendapatan)t-1",
+    "rationale": "Piutang naik lebih cepat dari pendapatan dapat menandakan pendapatan fiktif.",
+    "expected_sign": 1
+  },
+  {
+    "name": "gmi",
+    "label": "Indeks Margin Kotor (GMI)",
+    "group": "Beneish",
+    "formula": "Margin Kotor t-1 / Margin Kotor t",
+    "rationale": "Margin yang memburuk menambah tekanan untuk memanipulasi laba.",
+    "expected_sign": 1
+  },
+  {
+    "name": "aqi",
+    "label": "Indeks Kualitas Aset (AQI)",
+    "group": "Beneish",
+    "formula": "[1-(AsetLancar+AsetTetap)/TotalAset]t / [..]t-1",
+    "rationale": "Kenaikan aset tak berwujud/lain-lain dapat menandakan penundaan biaya (kapitalisasi).",
+    "expected_sign": 1
+  },
+  {
+    "name": "sgi",
+    "label": "Indeks Pertumbuhan Penjualan (SGI)",
+    "group": "Beneish",
+    "formula": "Pendapatan t / Pendapatan t-1",
+    "rationale": "Perusahaan bertumbuh pesat menghadapi tekanan untuk mempertahankan kinerja.",
+    "expected_sign": 1
+  },
+  {
+    "name": "depi",
+    "label": "Indeks Penyusutan (DEPI)",
+    "group": "Beneish",
+    "formula": "Laju Penyusutan t-1 / Laju Penyusutan t",
+    "rationale": "Laju penyusutan yang melambat dapat menandakan perpanjangan umur ekonomis untuk menaikkan laba.",
+    "expected_sign": 1
+  },
+  {
+    "name": "sgai",
+    "label": "Indeks Beban SGA (SGAI)",
+    "group": "Beneish",
+    "formula": "(SGA/Pendapatan)t / (SGA/Pendapatan)t-1",
+    "rationale": "Beban SGA yang naik tidak proporsional dapat menjadi sinyal prospek memburuk (hipotesis Beneish: positif; koefisien estimasi pada sampel AS negatif dan tidak signifikan).",
+    "expected_sign": 1
+  },
+  {
+    "name": "lvgi",
+    "label": "Indeks Leverage (LVGI)",
+    "group": "Beneish",
+    "formula": "[(LiabLancar+LiabJangkaPanjang)/TotalAset]t / [..]t-1",
+    "rationale": "Kenaikan leverage meningkatkan insentif memenuhi perjanjian utang (hipotesis Beneish: positif; koefisien estimasi pada sampel AS negatif dan tidak signifikan).",
+    "expected_sign": 1
+  },
+  {
+    "name": "tata",
+    "label": "Akrual terhadap Total Aset (TATA)",
+    "group": "Beneish",
+    "formula": "(Laba Bersih - Arus Kas Operasi) / Total Aset",
+    "rationale": "Laba yang tidak didukung kas (akrual tinggi) adalah sinyal kuat manajemen laba.",
+    "expected_sign": 1
+  },
+  {
+    "name": "current_ratio",
+    "label": "Rasio Lancar",
+    "group": "Likuiditas",
+    "formula": "Aset Lancar / Liabilitas Jangka Pendek",
+    "rationale": "Ukuran kemampuan memenuhi kewajiban jangka pendek.",
+    "expected_sign": 0
+  },
+  {
+    "name": "quick_ratio",
+    "label": "Rasio Cepat",
+    "group": "Likuiditas",
+    "formula": "(Aset Lancar - Persediaan) / Liabilitas Jangka Pendek",
+    "rationale": "Likuiditas tanpa persediaan yang sulit diverifikasi.",
+    "expected_sign": 0
+  },
+  {
+    "name": "cash_ratio",
+    "label": "Rasio Kas",
+    "group": "Likuiditas",
+    "formula": "Kas / Liabilitas Jangka Pendek",
+    "rationale": "Kas relatif sulit dimanipulasi dibanding akun akrual.",
+    "expected_sign": -1
+  },
+  {
+    "name": "debt_to_assets",
+    "label": "Liabilitas terhadap Aset",
+    "group": "Solvabilitas",
+    "formula": "Total Liabilitas / Total Aset",
+    "rationale": "Leverage tinggi meningkatkan tekanan pemenuhan perjanjian utang.",
+    "expected_sign": 1
+  },
+  {
+    "name": "debt_to_equity",
+    "label": "Liabilitas terhadap Ekuitas (DER)",
+    "group": "Solvabilitas",
+    "formula": "Total Liabilitas / Ekuitas (hanya jika Ekuitas > 0)",
+    "rationale": "Struktur modal agresif. Terdefinisi hanya untuk ekuitas positif.",
+    "expected_sign": 1
+  },
+  {
+    "name": "long_term_debt_to_assets",
+    "label": "Utang Jangka Panjang terhadap Aset",
+    "group": "Solvabilitas",
+    "formula": "Liabilitas Jangka Panjang / Total Aset",
+    "rationale": "Beban utang struktural.",
+    "expected_sign": 1
+  },
+  {
+    "name": "interest_coverage",
+    "label": "Cakupan Bunga",
+    "group": "Solvabilitas",
+    "formula": "EBIT / Beban Bunga",
+    "rationale": "Kemampuan membayar bunga; nilai rendah berarti tekanan keuangan.",
+    "expected_sign": -1
+  },
+  {
+    "name": "roa",
+    "label": "Return on Assets (ROA)",
+    "group": "Profitabilitas",
+    "formula": "Laba Bersih / Total Aset",
+    "rationale": "Kinerja yang buruk maupun terlalu baik dibanding peers sama-sama mencurigakan.",
+    "expected_sign": 0
+  },
+  {
+    "name": "roe",
+    "label": "Return on Equity (ROE)",
+    "group": "Profitabilitas",
+    "formula": "Laba Bersih / Ekuitas (hanya jika Ekuitas > 0)",
+    "rationale": "Profitabilitas bagi pemegang saham.",
+    "expected_sign": 0
+  },
+  {
+    "name": "net_margin",
+    "label": "Margin Laba Bersih",
+    "group": "Profitabilitas",
+    "formula": "Laba Bersih / Pendapatan",
+    "rationale": "Margin laba yang tidak wajar dapat menandakan manajemen laba.",
+    "expected_sign": 0
+  },
+  {
+    "name": "gross_margin",
+    "label": "Margin Kotor",
+    "group": "Profitabilitas",
+    "formula": "(Pendapatan - HPP) / Pendapatan",
+    "rationale": "Margin yang terlalu tinggi dapat menandakan HPP yang diturunkan.",
+    "expected_sign": 0
+  },
+  {
+    "name": "operating_margin",
+    "label": "Margin Operasi",
+    "group": "Profitabilitas",
+    "formula": "EBIT / Pendapatan",
+    "rationale": "Profitabilitas inti usaha.",
+    "expected_sign": 0
+  },
+  {
+    "name": "ebit_to_assets",
+    "label": "EBIT terhadap Aset",
+    "group": "Profitabilitas",
+    "formula": "EBIT / Total Aset",
+    "rationale": "Produktivitas aset sebelum bunga dan pajak (komponen X3 Altman).",
+    "expected_sign": -1
+  },
+  {
+    "name": "asset_turnover",
+    "label": "Perputaran Aset",
+    "group": "Aktivitas",
+    "formula": "Pendapatan / Total Aset",
+    "rationale": "Efisiensi penggunaan aset (komponen X5 Altman).",
+    "expected_sign": 0
+  },
+  {
+    "name": "dso",
+    "label": "Hari Penagihan Piutang (DSO)",
+    "group": "Aktivitas",
+    "formula": "Piutang / Pendapatan x 365",
+    "rationale": "Penagihan yang melambat adalah sinyal klasik pendapatan fiktif.",
+    "expected_sign": 1
+  },
+  {
+    "name": "dio",
+    "label": "Hari Persediaan (DIO)",
+    "group": "Aktivitas",
+    "formula": "Persediaan / HPP x 365",
+    "rationale": "Persediaan menumpuk dapat menandakan penggelembungan nilai persediaan.",
+    "expected_sign": 1
+  },
+  {
+    "name": "receivables_to_assets",
+    "label": "Piutang terhadap Aset",
+    "group": "Struktur Aset",
+    "formula": "Piutang / Total Aset",
+    "rationale": "Porsi piutang yang besar lebih mudah dimanipulasi.",
+    "expected_sign": 1
+  },
+  {
+    "name": "inventory_to_assets",
+    "label": "Persediaan terhadap Aset",
+    "group": "Struktur Aset",
+    "formula": "Persediaan / Total Aset",
+    "rationale": "Porsi persediaan yang besar lebih mudah dimanipulasi.",
+    "expected_sign": 1
+  },
+  {
+    "name": "ppe_to_assets",
+    "label": "Aset Tetap terhadap Aset",
+    "group": "Struktur Aset",
+    "formula": "Aset Tetap Neto / Total Aset",
+    "rationale": "Intensitas modal.",
+    "expected_sign": 0
+  },
+  {
+    "name": "retained_earnings_to_assets",
+    "label": "Laba Ditahan terhadap Aset",
+    "group": "Struktur Aset",
+    "formula": "Laba Ditahan / Total Aset",
+    "rationale": "Akumulasi laba (komponen X2 Altman); perusahaan muda lebih rentan.",
+    "expected_sign": -1
+  },
+  {
+    "name": "working_capital_to_assets",
+    "label": "Modal Kerja terhadap Aset",
+    "group": "Struktur Aset",
+    "formula": "(Aset Lancar - Liabilitas Jangka Pendek) / Total Aset",
+    "rationale": "Komponen X1 Altman.",
+    "expected_sign": -1
+  },
+  {
+    "name": "asset_growth",
+    "label": "Pertumbuhan Aset",
+    "group": "Pertumbuhan",
+    "formula": "Total Aset t / Total Aset t-1 - 1",
+    "rationale": "Pertumbuhan aset yang tidak diikuti pendapatan patut diwaspadai.",
+    "expected_sign": 1
+  },
+  {
+    "name": "cfo_to_assets",
+    "label": "Arus Kas Operasi terhadap Aset",
+    "group": "Kualitas Laba",
+    "formula": "Arus Kas Operasi / Total Aset",
+    "rationale": "Kas operasi yang lemah dibanding laba menandakan kualitas laba rendah.",
+    "expected_sign": -1
+  },
+  {
+    "name": "cfo_to_revenue",
+    "label": "Arus Kas Operasi terhadap Pendapatan",
+    "group": "Kualitas Laba",
+    "formula": "Arus Kas Operasi / Pendapatan",
+    "rationale": "Konversi pendapatan menjadi kas.",
+    "expected_sign": -1
+  },
+  {
+    "name": "mve_to_liabilities",
+    "label": "Nilai Pasar Ekuitas terhadap Liabilitas",
+    "group": "Pasar",
+    "formula": "Nilai Pasar Ekuitas / Total Liabilitas",
+    "rationale": "Komponen X4 Altman; penyangga terhadap kebangkrutan.",
+    "expected_sign": -1
+  },
+  {
+    "name": "market_to_book",
+    "label": "Market-to-Book",
+    "group": "Pasar",
+    "formula": "Nilai Pasar Ekuitas / Ekuitas (hanya jika Ekuitas > 0)",
+    "rationale": "Ekspektasi pasar yang tinggi menambah tekanan memenuhi target.",
+    "expected_sign": 1
+  },
+  {
+    "name": "log_total_assets",
+    "label": "Ukuran Perusahaan (ln Aset)",
+    "group": "Ukuran",
+    "formula": "ln(Total Aset)",
+    "rationale": "Variabel kontrol ukuran; transformasi log meredam kemiringan ekstrem.",
+    "expected_sign": 0
+  },
+  {
+    "name": "round_share_1000",
+    "label": "Porsi Angka Bulat Ribuan",
+    "group": "Digit",
+    "formula": "Porsi pos laporan yang berkelipatan 1000",
+    "rationale": "Digit preference: angka karangan cenderung dibulatkan (lihat uji digit terakhir).",
+    "expected_sign": 1
+  }
+]

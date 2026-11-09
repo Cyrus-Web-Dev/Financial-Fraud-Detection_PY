@@ -1,0 +1,1 @@
+{"status": "ok", "siap_prediksi": true, "model_tersedia": ["logit_mle", "logreg", "random_forest", "hist_gb"], "jumlah_riwayat": 0}

@@ -1,0 +1,42 @@
+{
+  "nama": "logit_firth",
+  "disimpan_pada": "2026-11-03T19:20:05+00:00",
+  "versi_library": {
+    "python": "3.12.3",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.8.0"
+  },
+  "fitur": [
+    "dsri",
+    "gmi",
+    "aqi",
+    "sgi",
+    "depi",
+    "sgai",
+    "lvgi",
+    "tata",
+    "asset_growth",
+    "round_share_1000"
+  ],
+  "seed": 42,
+  "firth": true,
+  "kecocokan_model": {
+    "n_obs": 2880,
+    "n_parameter": 11,
+    "log_likelihood": -374.46526428479046,
+    "log_likelihood_null": -662.440037399302,
+    "lr_chi2": 575.9495462290231,
+    "lr_df": 10,
+    "lr_p_value": 2.4969217983818697e-117,
+    "pseudo_r2_mcfadden": 0.4347182489830814,
+    "aic": 770.9305285695809,
+    "bic": 836.5515298740108,
+    "iterasi": 9,
+    "konvergen": true,
+    "separasi_dicurigai": false,
+    "firth": true
+  },
+  "catatan": "Koefisien pada fitur terstandardisasi (odds ratio per 1 SD)."
+}
